@@ -1,13 +1,13 @@
 <script lang="ts">
-export default {name: 'SeamlessScroll'}
+export default { name: 'SeamlessScroll' }
 </script>
 <script lang="ts" setup>
-import {computed, ref} from 'vue'
-import {seamlessScrollProps} from './seamlessScroll'
+import { computed, ref } from 'vue'
+import { seamlessScrollProps } from './seamlessScroll'
 const props = defineProps(seamlessScrollProps)
 const height = props.height + 'px'
 const y = ref(0)
-const style = computed(() => ({transform: `translateY(${y.value}px)`}))
+const style = computed(() => ({ transform: `translateY(${y.value}px)` }))
 
 let requestAnimationFrameId = -1
 const startScrollAnimation = () => {
@@ -21,10 +21,10 @@ const startScrollAnimation = () => {
 const stopScrollAnimation = () => {
   cancelAnimationFrame(requestAnimationFrameId)
 }
-// startScrollAnimation()
+startScrollAnimation()
 </script>
 <template>
-  <div class="wrap" :style="{height: height}">
+  <div class="wrap" :style="{ height: height }">
     <div
       :style="style"
       @mouseenter="stopScrollAnimation"

@@ -1,4 +1,4 @@
-import type {Plugin} from 'vue'
+import type { Plugin } from 'vue'
 import seamlessScroll from './src/seamlessScroll.vue'
 export type SFCWithInstall<T> = T & Plugin
 const withInstall = <T>(comp: T) => {
