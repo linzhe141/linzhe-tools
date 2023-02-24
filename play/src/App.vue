@@ -14,7 +14,7 @@
       </SeamlessScroll>
     </div>
     <div>
-      <div>分部滚动</div>
+      <div>分步滚动</div>
       <SeamlessScroll
         :height="108"
         :step-height="22"
