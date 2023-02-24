@@ -12,10 +12,11 @@
     "dev": "pnpm run -C play dev"
   },
   "keywords": [
+    "vue3",
     "无限滚动",
     "分布滚动"
   ],
-  "author": "linzhe",
+  "author": "linzhe141@qq.com",
   "license": "ISC",
   "peerDependencies": {
     "vue": "^3.2.36"

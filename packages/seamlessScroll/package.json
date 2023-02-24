@@ -8,10 +8,18 @@
   "scripts": {
     "build": "rollup -c"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/linzhe141/linzhe_tools/tree/main/packages/seamlessScroll"
+  },
   "peerDependencies": {
     "vue": "^3.2.0"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "vue3",
+    "无限滚动",
+    "分布滚动"
+  ],
+  "author": "linzhe141@qq.com",
   "license": "ISC"
 }

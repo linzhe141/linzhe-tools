@@ -18,7 +18,7 @@
       <SeamlessScroll
         :height="108"
         :step-height="22"
-        :step-wait-timeout="1000"
+        :step-wait-timeout="2000"
         style="background-color: #ccc"
       >
         <div style="line-height: 22px">11111111111111111111</div>
