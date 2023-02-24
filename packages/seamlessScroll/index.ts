@@ -9,8 +9,3 @@ const withInstall = <T>(comp: T) => {
 }
 export const SeamlessScroll = withInstall(seamlessScroll)
 export default SeamlessScroll
-declare module '@vue/runtime-core' {
-  export interface GlobalComponents {
-    SeamlessScroll: typeof SeamlessScroll
-  }
-}

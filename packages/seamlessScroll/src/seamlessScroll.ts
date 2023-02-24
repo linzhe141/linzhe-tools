@@ -1,9 +1,9 @@
-// 这里props 和 对应类型
+// 这里vue组件的props 和 以及对应类型
 
-import type { ExtractPropTypes, PropType } from 'vue'
+import type { ExtractPropTypes } from 'vue'
 export const seamlessScrollProps = {
   height: { type: Number, default: 500 },
-  setpHeight: { type: Number, default: 500 },
-  // list: {type: Array as PropType<Array<unknown>>}
+  stepHeight: { type: Number, default: 0 },
+  stepWaitTimeout: { type: Number, default: 0 },
 }
 export type SeamlessScrollProps = ExtractPropTypes<typeof seamlessScrollProps>

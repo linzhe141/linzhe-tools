@@ -2,13 +2,22 @@
   "name": "linzhe_tools",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "dev": "pnpm run -C play dev"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "无限滚动",
+    "分布滚动"
+  ],
+  "author": "linzhe",
   "license": "ISC",
+  "peerDependencies": {
+    "vue": "^3.2.36"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/linzhe141/linzhe_tools.git"
+  },
   "dependencies": {
     "@linzhe_tools/seamless-scroll": "workspace:*"
   },
