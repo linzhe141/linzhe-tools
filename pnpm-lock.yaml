@@ -4,20 +4,27 @@ importers:
 
   .:
     specifiers:
+      '@linzhe_tools/number-scroll': workspace:*
       '@linzhe_tools/seamless-scroll': workspace:*
       '@vitejs/plugin-vue': ^4.0.0
+      dayjs: ^1.11.7
       sass: ^1.58.3
       typescript: ^4.9.3
       vite: ^4.1.0
       vue: ^3.2.36
     dependencies:
+      '@linzhe_tools/number-scroll': link:packages/numberScroll
       '@linzhe_tools/seamless-scroll': link:packages/seamlessScroll
     devDependencies:
       '@vitejs/plugin-vue': 4.0.0_vite@4.1.4+vue@3.2.36
+      dayjs: 1.11.7
       sass: 1.58.3
       typescript: 4.9.5
       vite: 4.1.4_sass@1.58.3
       vue: 3.2.36
+
+  packages/numberScroll:
+    specifiers: {}
 
   packages/seamlessScroll:
     specifiers: {}
@@ -383,6 +390,10 @@ packages:
 
   /csstype/2.6.21:
     resolution: {integrity: sha512-Z1PhmomIfypOpoMjRQB70jfvy/wxT50qW08YXO5lMIJkrdq4yOTR+AW7FqutScmB9NkLwxo+jU+kZLbofZZq/w==}
+    dev: true
+
+  /dayjs/1.11.7:
+    resolution: {integrity: sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==}
     dev: true
 
   /esbuild/0.16.17:
