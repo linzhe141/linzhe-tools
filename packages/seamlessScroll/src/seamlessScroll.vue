@@ -54,10 +54,7 @@ onMounted(() => {
 })
 </script>
 <template>
-  <div class="wrap" :style="{ height: height }">
-    <!-- TODO
-      
-    -->
+  <div class="wrap" :style="{ height: height, overflow: 'hidden' }">
     <div
       ref="scrollContentRef"
       :style="style"
@@ -69,11 +66,3 @@ onMounted(() => {
     </div>
   </div>
 </template>
-<style lang="scss" scoped>
-.wrap {
-  overflow: hidden;
-  // .scroll-content-transtion {
-  //   transition: all 0.5s;
-  // }
-}
-</style>
