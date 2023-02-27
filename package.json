@@ -1,6 +1,6 @@
 {
-  "name": "linzhe-tools",
-  "version": "1.0.6",
+  "name": "linzhe_tools",
+  "version": "1.0.0",
   "description": "",
   "workspaces": {
     "packages": [
