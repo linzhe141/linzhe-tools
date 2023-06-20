@@ -1,17 +1,24 @@
 # @linzhe_tool/numberScroll
 
-数字滚动组件
+# 🚀 数字滚动组件
 
 ```ts
-type NumberScrollProps = {
+type Props = {
   // 动态改变这个数字字符串，即可实现滚动
   numberString: string
 }
 ```
 
+## 📝 使用方法
+
+```properties
+npm i -S @linzhe_tools/number-scroll
+```
+
 ```html
 <script lang="ts" setup>
   import dayjs from 'dayjs'
+  import NumberScroll from '@linzhe_tools/number-scroll'
   import { onMounted, ref, computed } from 'vue'
   const num = ref(100)
   const time = ref(Date.now())

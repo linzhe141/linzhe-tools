@@ -1,6 +1,6 @@
 # @linzhe_tool/carousel
 
-轮播图组件
+# 🚀轮播图组件
 
 ```ts
 type Props = {

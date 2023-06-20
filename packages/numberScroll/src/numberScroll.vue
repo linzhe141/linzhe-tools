@@ -3,10 +3,10 @@ export default { name: 'NumberScroll' }
 </script>
 <script lang="ts" setup>
 import { computed } from 'vue'
-type NumberScrollProps = {
+type Props = {
   numberString: string
 }
-defineProps<NumberScrollProps>()
+defineProps<Props>()
 const numReg = /\d/
 const isNumber = computed(() => (data: string) => numReg.test(data))
 const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
