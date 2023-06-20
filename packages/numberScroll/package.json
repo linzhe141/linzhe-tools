@@ -1,6 +1,6 @@
 {
   "name": "@linzhe_tools/number-scroll",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "publishConfig": {
     "access": "public"
