@@ -1,10 +1,10 @@
 {
   "name": "@linzhe_tools/seamless-scroll",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "type": "module",
   "main": "dist/seamlessScroll.umd.js",
   "module": "dist/seamlessScroll.esm.js",
-  "description": "vue3 无限滚动组件，支持分步滚动",
+  "description": "vue3 seamless scroll component",
   "publishConfig": {
     "access": "public"
   },
@@ -20,6 +20,8 @@
   },
   "keywords": [
     "vue3",
+    "step scroll",
+    "number scroll",
     "无限滚动",
     "分布滚动"
   ],

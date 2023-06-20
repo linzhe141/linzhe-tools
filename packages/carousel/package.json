@@ -1,7 +1,7 @@
 {
   "name": "@linzhe_tools/carousel",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.2",
+  "description": "vue3 carousel component",
   "publishConfig": {
     "access": "public"
   },
@@ -17,6 +17,7 @@
   },
   "keywords": [
     "vue3",
+    "carousel",
     "轮播"
   ],
   "author": "linzhe141@qq.com",

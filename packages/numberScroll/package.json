@@ -1,7 +1,7 @@
 {
   "name": "@linzhe_tools/number-scroll",
-  "version": "1.0.2",
-  "description": "",
+  "version": "1.0.3",
+  "description": "vue3 number-scroll component",
   "publishConfig": {
     "access": "public"
   },
@@ -17,7 +17,8 @@
   },
   "keywords": [
     "vue3",
-    "数字滚动"
+    "数字滚动",
+    "number scroll"
   ],
   "author": "linzhe141@qq.com",
   "license": "ISC"

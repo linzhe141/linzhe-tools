@@ -1,6 +1,6 @@
 {
   "name": "linzhe_tools",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "",
   "workspaces": {
     "packages": [
@@ -14,9 +14,13 @@
   },
   "keywords": [
     "vue3",
+    "seamless scroll",
+    "step scroll",
+    "number scroll",
     "无限滚动",
-    "分布滚动",
-    "数字滚动"
+    "分步滚动",
+    "数字滚动",
+    "轮播"
   ],
   "author": "linzhe141@qq.com",
   "license": "ISC",
@@ -28,7 +32,7 @@
     "url": "https://github.com/linzhe141/linzhe_tools.git"
   },
   "dependencies": {
-    "@linzhe_tools/carousel": "workspace:^1.0.0",
+    "@linzhe_tools/carousel": "workspace:*",
     "@linzhe_tools/number-scroll": "workspace:*",
     "@linzhe_tools/seamless-scroll": "workspace:*"
   },
