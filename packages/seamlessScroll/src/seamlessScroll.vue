@@ -28,7 +28,7 @@ const startScrollAnimation = () => {
       stopScrollAnimation()
       setTimoutId = setTimeout(() => {
         startScrollAnimation()
-      }, stepWaitTimeout) as unknown as number
+      }, stepWaitTimeout)
     } else {
       requestAnimationFrameId = requestAnimationFrame(startScrollAnimation)
     }

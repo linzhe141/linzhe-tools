@@ -1,6 +1,6 @@
 {
   "name": "linzhe_tools",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "",
   "workspaces": {
     "packages": [
@@ -28,6 +28,7 @@
     "url": "https://github.com/linzhe141/linzhe_tools.git"
   },
   "dependencies": {
+    "@linzhe_tools/carousel": "workspace:^1.0.0",
     "@linzhe_tools/number-scroll": "workspace:*",
     "@linzhe_tools/seamless-scroll": "workspace:*"
   },

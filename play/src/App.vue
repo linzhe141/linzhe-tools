@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import dayjs from 'dayjs'
 import { onMounted, ref, computed } from 'vue'
+import { CarouselItem, Carousel } from '@linzhe_tools/carousel'
 const num = ref(100)
 const time = ref(Date.now())
 const numberValue = computed(() => num.value + '')
@@ -44,6 +45,88 @@ onMounted(() => {
         <div style="line-height: 22px">55555555555555555555</div>
         <div style="line-height: 22px">66666666666666666666</div>
       </SeamlessScroll>
+    </div>
+    <div style="width: 340px; height: 180px">
+      <Carousel>
+        <CarouselItem
+          ><div
+            style="
+              line-height: 180px;
+              text-align: center;
+              font-size: 40px;
+              color: #fff;
+              background-color: rgb(110, 46, 46);
+            "
+          >
+            1
+          </div></CarouselItem
+        >
+        <CarouselItem
+          ><div
+            style="
+              line-height: 180px;
+              text-align: center;
+              font-size: 40px;
+              color: #fff;
+              background-color: rgb(31, 97, 29);
+            "
+          >
+            2
+          </div></CarouselItem
+        >
+        <CarouselItem
+          ><div
+            style="
+              line-height: 180px;
+              text-align: center;
+              font-size: 40px;
+              color: #fff;
+              background-color: rgb(39, 176, 185);
+            "
+          >
+            3
+          </div></CarouselItem
+        >
+        <CarouselItem
+          ><div
+            style="
+              line-height: 180px;
+              text-align: center;
+              font-size: 40px;
+              color: #fff;
+              background-color: #ff0000;
+            "
+          >
+            4
+          </div></CarouselItem
+        >
+        <CarouselItem
+          ><div
+            style="
+              line-height: 180px;
+              text-align: center;
+              font-size: 40px;
+              color: #fff;
+              background-color: #cc00ff;
+            "
+          >
+            5
+          </div></CarouselItem
+        >
+        <CarouselItem
+          ><div
+            style="
+              line-height: 180px;
+              text-align: center;
+              font-size: 40px;
+              color: #fff;
+              background-color: #ff8800;
+            "
+          >
+            6
+          </div></CarouselItem
+        >
+      </Carousel>
     </div>
   </div>
 </template>

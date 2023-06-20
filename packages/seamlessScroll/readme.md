@@ -6,7 +6,7 @@
 export const props = {
   // 容器高度
   height: { type: Number, default: 500 },
-  // 只有stepHeight和stepWaitTimeout都大于0时才进行分布滚动
+  // 只有stepHeight和stepWaitTimeout都大于0时才进行分步滚动
   // 每一步滚动距离
   stepHeight: { type: Number, default: 0 },
   // 间隔多少毫秒滚动下一步
@@ -14,9 +14,9 @@ export const props = {
 }
 ```
 
-+ 浏览器使用
-```html
+- 浏览器使用
 
+```html
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
 <script src="./seamlessScroll.umd.js"></script>
@@ -56,7 +56,9 @@ export const props = {
   app.mount('#app')
 </script>
 ```
-+ 构建工具使用
+
+- 构建工具使用
+
 ```html
 <div>默认滚动</div>
 <SeamlessScroll :height="108" style="background-color: #ccc">

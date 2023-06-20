@@ -5,6 +5,7 @@ importers:
   .:
     specifiers:
       '@babel/core': ^7.21.0
+      '@linzhe_tools/carousel': workspace:^1.0.0
       '@linzhe_tools/number-scroll': workspace:*
       '@linzhe_tools/seamless-scroll': workspace:*
       '@rollup/plugin-babel': ^6.0.3
@@ -29,6 +30,7 @@ importers:
       vite: ^4.1.0
       vue: ^3.2.36
     dependencies:
+      '@linzhe_tools/carousel': link:packages/carousel
       '@linzhe_tools/number-scroll': link:packages/numberScroll
       '@linzhe_tools/seamless-scroll': link:packages/seamlessScroll
     devDependencies:

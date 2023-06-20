@@ -1,0 +1,24 @@
+{
+  "name": "@linzhe_tools/carousel",
+  "version": "1.0.0",
+  "description": "",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/linzhe141/linzhe_tools/tree/main/packages/carousel"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.0"
+  },
+  "keywords": [
+    "vue3",
+    "轮播"
+  ],
+  "author": "linzhe141@qq.com",
+  "license": "ISC"
+}

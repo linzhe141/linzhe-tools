@@ -1,6 +1,6 @@
 {
   "name": "@linzhe_tools/seamless-scroll",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "type": "module",
   "main": "dist/seamlessScroll.umd.js",
   "module": "dist/seamlessScroll.esm.js",
