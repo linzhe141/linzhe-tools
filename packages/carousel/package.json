@@ -1,6 +1,6 @@
 {
   "name": "@linzhe_tools/carousel",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "vue3 carousel component",
   "publishConfig": {
     "access": "public"

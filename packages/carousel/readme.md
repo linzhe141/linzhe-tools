@@ -1,6 +1,6 @@
 # @linzhe_tool/carousel
 
-# 🚀轮播图组件
+# 🚀 轮播图组件
 
 ```ts
 type Props = {
@@ -29,58 +29,26 @@ npm i -S @linzhe_tools/carousel
   <div style="width: 340px; height: 180px">
     <Carousel>
       <CarouselItem
-        ><div
-          style="
-              line-height: 180px;
-              text-align: center;
-              font-size: 40px;
-              color: #fff;
-              background-color: rgb(110, 46, 46);
-            "
-        >
-          1
-        </div></CarouselItem
+        ><div style="background-color: rgb(110, 46, 46);">1</div></CarouselItem
       >
       <CarouselItem
-        ><div
-          style="
-              line-height: 180px;
-              text-align: center;
-              font-size: 40px;
-              color: #fff;
-              background-color: rgb(31, 97, 29);
-            "
-        >
-          2
-        </div></CarouselItem
+        ><div style="background-color: rgb(31, 97, 29);">2</div></CarouselItem
       >
       <CarouselItem
-        ><div
-          style="
-              line-height: 180px;
-              text-align: center;
-              font-size: 40px;
-              color: #fff;
-              background-color: rgb(39, 176, 185);
-            "
-        >
-          3
-        </div></CarouselItem
+        ><div style="background-color: rgb(39, 176, 185);">3</div></CarouselItem
       >
       <CarouselItem
-        ><div
-          style="
-              line-height: 180px;
-              text-align: center;
-              font-size: 40px;
-              color: #fff;
-              background-color: #ff0000;
-            "
-        >
-          4
-        </div></CarouselItem
+        ><div style="background-color: #ff0000;">4</div></CarouselItem
       >
     </Carousel>
   </div>
 </template>
+<style>
+  .content-item {
+    line-height: 180px;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+  }
+</style>
 ```

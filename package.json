@@ -1,6 +1,6 @@
 {
   "name": "linzhe_tools",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "",
   "workspaces": {
     "packages": [
@@ -17,6 +17,7 @@
     "seamless scroll",
     "step scroll",
     "number scroll",
+    "carousel",
     "无限滚动",
     "分步滚动",
     "数字滚动",
