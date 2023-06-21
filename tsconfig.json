@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "declaration": true,
-    "declarationDir": "dist/types",
     "outDir": "dist",
     "target": "ESNext",
     "module": "esnext",
@@ -10,11 +9,12 @@
     "moduleResolution": "node",
     "allowJs": true,
     "strict": true,
-    "noUnusedLocals": true,
+    "noUnusedLocals": false,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "removeComments": false,
+    "noImplicitAny": false,
     "rootDir": ".",
     "types": [],
     "paths": {

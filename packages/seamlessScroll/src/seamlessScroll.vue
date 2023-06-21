@@ -3,8 +3,16 @@ export default { name: 'SeamlessScroll' }
 </script>
 <script lang="ts" setup>
 import { computed, onMounted, ref } from 'vue'
-import { seamlessScrollProps } from './seamlessScroll'
-const props = defineProps(seamlessScrollProps)
+type Props = {
+  height?: number
+  stepHeight?: number
+  stepWaitTimeout?: number
+}
+const props = withDefaults(defineProps<Props>(), {
+  height: 500,
+  stepHeight: 0,
+  stepWaitTimeout: 0,
+})
 const height = props.height + 'px'
 const stepHeight = props.stepHeight
 const stepWaitTimeout = props.stepWaitTimeout

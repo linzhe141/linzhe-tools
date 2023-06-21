@@ -3,7 +3,8 @@ import vue from 'rollup-plugin-vue'
 // 处理ts插件
 import typescript from 'rollup-plugin-typescript2'
 
-const name = 'seamlessScroll'
+import scss from 'rollup-plugin-scss'
+const name = 'carousel'
 const file = (type) => `dist/${name}.${type}.js`
 
 export { name, file }
@@ -24,6 +25,12 @@ export default {
       format: 'esm',
     },
   ],
-  plugins: [typescript(), vue()],
+  plugins: [
+    typescript(),
+    vue(),
+    scss({
+      fileName: `${name}.css`,
+    }),
+  ],
   external: ['vue'], // 规定哪些是外部引用的模块
 }

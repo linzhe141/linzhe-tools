@@ -1,6 +1,6 @@
 {
   "name": "@linzhe_tools/seamless-scroll",
-  "version": "1.0.8",
+  "version": "1.0.11",
   "type": "module",
   "main": "dist/seamlessScroll.umd.js",
   "module": "dist/seamlessScroll.esm.js",
@@ -9,7 +9,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "rollup -c"
+    "build": "rm -rf dist && rollup -c"
   },
   "repository": {
     "type": "git",

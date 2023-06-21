@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/dayjs/1.11.7/dayjs.min.js"></script>
+    <script src="../packages/numberScroll/dist/numberScroll.umd.js"></script>
+    <link href="../packages/numberScroll/dist/numberScroll.css" rel="stylesheet"></link>
+  </head>
+  <body>
+    <div id="app">
+      <number-scroll :number-string="numberValue" ></number-scroll>
+      <p>==============</p>
+      <number-scroll :number-string="timeValue" ></number-scroll>
+    </div>
+    <script>
+      const { NumberScroll } = numberScroll
+      const app = Vue.createApp({
+        setup(){
+          const { onMounted, ref, computed } = Vue
+          const num = ref(100)
+          const time = ref(Date.now())
+          const numberValue = computed(() => num.value + '')
+          const timeValue = computed(() => dayjs(time.value).format('HH:mm:ss'))
+          onMounted(() => {
+            setInterval(() => {
+              num.value++
+              time.value = Date.now()
+              console.log('num',num)
+              console.log('time',time)
+            }, 1000)
+          })
+          return {
+            numberValue,
+            timeValue
+          }
+        },
+      })
+      app.component('NumberScroll', NumberScroll)
+      app.mount('#app')
+    </script>
+  </body>
+</html>

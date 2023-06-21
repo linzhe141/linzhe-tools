@@ -1,6 +1,7 @@
 {
   "name": "linzhe_tools",
-  "version": "1.0.12",
+  "type": "module",
+  "version": "1.0.13p",
   "description": "",
   "workspaces": {
     "packages": [
@@ -10,7 +11,9 @@
   },
   "scripts": {
     "dev": "pnpm run -C play dev",
-    "build:seamlessScroll": "pnpm run -C packages/seamlessScroll build"
+    "build:seamlessScroll": "pnpm run -C packages/seamlessScroll build",
+    "build:numberScroll": "pnpm run -C packages/numberScroll build",
+    "build:carousel": "pnpm run -C packages/carousel build"
   },
   "keywords": [
     "vue3",
@@ -48,11 +51,12 @@
     "@vitejs/plugin-vue": "^4.0.0",
     "@vue/compiler-sfc": "^3.2.47",
     "dayjs": "^1.11.7",
-    "node-sass": "^8.0.0",
     "postcss": "^8.4.21",
     "rollup": "^3.17.3",
+    "rollup-plugin-css-only": "^4.3.0",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-sass": "^1.12.18",
+    "rollup-plugin-scss": "^4.0.0",
     "rollup-plugin-typescript2": "^0.34.1",
     "rollup-plugin-vue": "^6.0.0",
     "sass": "^1.58.3",
