@@ -3,15 +3,20 @@
 # 🚀 无限滚动组件，支持分步滚动
 
 ```ts
-export const props = {
+type Props = {
   // 容器高度
-  height: { type: Number, default: 500 },
+  height?: number
   // 只有stepHeight和stepWaitTimeout都大于0时才进行分步滚动
   // 每一步滚动距离
-  stepHeight: { type: Number, default: 0 },
+  stepHeight?: number
   // 间隔多少毫秒滚动下一步
-  stepWaitTimeout: { type: Number, default: 0 },
+  stepWaitTimeout?: number
 }
+const props = withDefaults(defineProps<Props>(), {
+  height: 500,
+  stepHeight: 0,
+  stepWaitTimeout: 0,
+})
 ```
 
 ## 📝 使用方法
@@ -20,8 +25,7 @@ export const props = {
 
 ```html
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-
-<script src="./seamlessScroll.umd.js"></script>
+<script src="../packages/seamlessScroll/dist/seamlessScroll.umd.js"></script>
 <div id="app">
   <seamless-scroll :height="108" style="background-color: #ccc">
     <div style="line-height: 22px">11111111111111111111</div>
@@ -47,6 +51,7 @@ export const props = {
   </seamless-scroll>
 </div>
 <script>
+  const { SeamlessScroll } = seamlessScroll
   const app = Vue.createApp({
     data() {
       return {
@@ -54,7 +59,7 @@ export const props = {
       }
     },
   })
-  app.component('SeamlessScroll', SeamlessScroll.default)
+  app.component('SeamlessScroll', SeamlessScroll)
   app.mount('#app')
 </script>
 ```
@@ -66,6 +71,7 @@ npm i -S @linzhe_tools/seamless-scroll
 ```
 
 ```html
+<!-- App.vue -->
 <script>
   import SeamlessScroll from '@linzhe_tools/seamless-scroll'
 </script>

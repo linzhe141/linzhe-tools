@@ -28,7 +28,7 @@ const startScrollAnimation = () => {
   if (y.value <= -scrollContentHeight / 2) {
     y.value = 0
   }
-  // 分部滚动
+  // 分步滚动
   if (stepHeight && stepWaitTimeout) {
     // 当滚动的距离是stepHeight的倍数是就暂停
     // stepWaitTimeout后继续滚动

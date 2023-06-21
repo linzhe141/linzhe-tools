@@ -11,11 +11,57 @@ type Props = {
 
 ## 📝 使用方法
 
+- 浏览器使用
+
+```html
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/dayjs/1.11.7/dayjs.min.js"></script>
+<script src="../packages/numberScroll/dist/numberScroll.umd.js"></script>
+<link href="../packages/numberScroll/dist/numberScroll.css" rel="stylesheet" />
+<div id="app">
+  <number-scroll :number-string="numberValue"></number-scroll>
+  <p>==============</p>
+  <number-scroll :number-string="timeValue"></number-scroll>
+</div>
+<script>
+  const { NumberScroll } = numberScroll
+  const app = Vue.createApp({
+    setup() {
+      const { onMounted, ref, computed } = Vue
+      const num = ref(100)
+      const time = ref(Date.now())
+      const numberValue = computed(() => num.value + '')
+      const timeValue = computed(() => dayjs(time.value).format('HH:mm:ss'))
+      onMounted(() => {
+        setInterval(() => {
+          num.value++
+          time.value = Date.now()
+        }, 1000)
+      })
+      return {
+        numberValue,
+        timeValue,
+      }
+    },
+  })
+  app.component('NumberScroll', NumberScroll)
+  app.mount('#app')
+</script>
+```
+
+- 构建工具使用
+
 ```properties
 npm i -S @linzhe_tools/number-scroll
 ```
 
+```ts
+// main.ts
+import '@linzhe_tools/number-scroll/dist/numberScroll.css'
+```
+
 ```html
+<!-- App.vue -->
 <script lang="ts" setup>
   import dayjs from 'dayjs'
   import NumberScroll from '@linzhe_tools/number-scroll'

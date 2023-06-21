@@ -55,7 +55,7 @@ onMounted(() => {
               text-align: center;
               font-size: 40px;
               color: #fff;
-              background-color: rgb(110, 46, 46);
+              background-color: #6e2e2e;
             "
           >
             1
@@ -68,7 +68,7 @@ onMounted(() => {
               text-align: center;
               font-size: 40px;
               color: #fff;
-              background-color: rgb(31, 97, 29);
+              background-color: #1f611d;
             "
           >
             2
@@ -81,7 +81,7 @@ onMounted(() => {
               text-align: center;
               font-size: 40px;
               color: #fff;
-              background-color: rgb(39, 176, 185);
+              background-color: #27b0b9;
             "
           >
             3

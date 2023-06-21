@@ -17,11 +17,74 @@ const props = withDefaults(defineProps<Props>(), {
 
 ## 📝 使用方法
 
+- 浏览器使用
+
+```html
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="../packages/carousel/dist/carousel.umd.js"></script>
+<link href="../packages/carousel/dist/carousel.css" rel="stylesheet" />
+<style>
+  .content-item {
+    line-height: 180px;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+  }
+</style>
+<div id="app">
+  <div style="width: 340px; height: 180px">
+    <carousel>
+      <carousel-item
+        ><div class="content-item" style="background-color: #6e2e2e">
+          1
+        </div></carousel-item
+      >
+      <carousel-item
+        ><div class="content-item" style="background-color: #1f611d">
+          2
+        </div></carousel-item
+      >
+      <carousel-item
+        ><div class="content-item" style="background-color: #27b0b9">
+          3
+        </div></carousel-item
+      >
+      <carousel-item
+        ><div class="content-item" style="background-color: #ff0000">
+          4
+        </div></carousel-item
+      >
+    </carousel>
+  </div>
+</div>
+<script>
+  const { Carousel, CarouselItem } = carousel
+  const app = Vue.createApp({
+    data() {
+      return {
+        message: 'Hello Vue!',
+      }
+    },
+  })
+  app.component('Carousel', Carousel)
+  app.component('CarouselItem', CarouselItem)
+  app.mount('#app')
+</script>
+```
+
+- 构建工具使用
+
 ```properties
 npm i -S @linzhe_tools/carousel
 ```
 
+```ts
+// main.ts
+import '@linzhe_tools/carousel/dist/carousel.css'
+```
+
 ```html
+<!-- App.vue -->
 <script setup lang="ts">
   import { CarouselItem, Carousel } from '@linzhe_tools/carousel'
 </script>
@@ -29,13 +92,13 @@ npm i -S @linzhe_tools/carousel
   <div style="width: 340px; height: 180px">
     <Carousel>
       <CarouselItem
-        ><div style="background-color: rgb(110, 46, 46);">1</div></CarouselItem
+        ><div style="background-color: #6e2e2e;">1</div></CarouselItem
       >
       <CarouselItem
-        ><div style="background-color: rgb(31, 97, 29);">2</div></CarouselItem
+        ><div style="background-color: #1f611d;">2</div></CarouselItem
       >
       <CarouselItem
-        ><div style="background-color: rgb(39, 176, 185);">3</div></CarouselItem
+        ><div style="background-color: #27b0b9;">3</div></CarouselItem
       >
       <CarouselItem
         ><div style="background-color: #ff0000;">4</div></CarouselItem
