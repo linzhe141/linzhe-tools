@@ -3,7 +3,7 @@
   "type": "module",
   "main": "dist/linzheTools.umd.js",
   "module": "dist/linzheTools.esm.js",
-  "version": "1.0.22",
+  "version": "1.0.23",
   "description": "",
   "scripts": {
     "publish2npm": "npm version patch && npm publish",
