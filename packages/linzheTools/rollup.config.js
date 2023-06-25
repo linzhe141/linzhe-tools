@@ -4,7 +4,7 @@ import vue from 'rollup-plugin-vue'
 import typescript from 'rollup-plugin-typescript2'
 
 import scss from 'rollup-plugin-scss'
-const name = 'numberScroll'
+const name = 'linzheTools'
 const file = (type) => `dist/${name}.${type}.js`
 
 export default {

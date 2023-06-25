@@ -21,8 +21,8 @@ const props = withDefaults(defineProps<Props>(), {
 
 ```html
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-<script src="../packages/carousel/dist/carousel.umd.js"></script>
-<link href="../packages/carousel/dist/carousel.css" rel="stylesheet" />
+<script src="../packages/linzheTools/dist/linzheTools.umd.js"></script>
+<link href="../packages/linzheTools/dist/linzheTools.css" rel="stylesheet" />
 <style>
   .content-item {
     line-height: 180px;
@@ -58,7 +58,7 @@ const props = withDefaults(defineProps<Props>(), {
   </div>
 </div>
 <script>
-  const { Carousel, CarouselItem } = carousel
+  const { Carousel, CarouselItem } = linzheTools
   const app = Vue.createApp({
     data() {
       return {
@@ -75,18 +75,27 @@ const props = withDefaults(defineProps<Props>(), {
 - 构建工具使用
 
 ```properties
+# 方式1
 npm i -S @linzhe_tools/carousel
+# 方式2 推荐
+npm i -S linzhe_tools
 ```
 
 ```ts
 // main.ts
+// 方式1
 import '@linzhe_tools/carousel/dist/carousel.css'
+// 方式2 推荐
+import 'linzhe_tools/dist/linzheTools.css'
 ```
 
 ```html
 <!-- App.vue -->
 <script setup lang="ts">
+  // 方式1
   import { CarouselItem, Carousel } from '@linzhe_tools/carousel'
+  // 方式2 推荐
+  import { CarouselItem, Carousel } from 'linzhe_tools'
 </script>
 <template>
   <div style="width: 340px; height: 180px">

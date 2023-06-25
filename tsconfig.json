@@ -20,5 +20,6 @@
     "paths": {
       "@linzhe_tools/*": ["packages/*"]
     }
-  }
+  },
+  "exclude": ["script/*/*"]
 }

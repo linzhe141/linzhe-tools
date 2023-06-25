@@ -25,7 +25,7 @@ const props = withDefaults(defineProps<Props>(), {
 
 ```html
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-<script src="../packages/seamlessScroll/dist/seamlessScroll.umd.js"></script>
+<script src="../packages/linzheTools/dist/linzheTools.umd.js"></script>
 <div id="app">
   <seamless-scroll :height="108" style="background-color: #ccc">
     <div style="line-height: 22px">11111111111111111111</div>
@@ -51,7 +51,7 @@ const props = withDefaults(defineProps<Props>(), {
   </seamless-scroll>
 </div>
 <script>
-  const { SeamlessScroll } = seamlessScroll
+  const { SeamlessScroll } = linzheTools
   const app = Vue.createApp({
     data() {
       return {
@@ -67,13 +67,19 @@ const props = withDefaults(defineProps<Props>(), {
 - 构建工具使用
 
 ```properties
+# 方式1
 npm i -S @linzhe_tools/seamless-scroll
+# 方式2 推荐
+npm i -S linzhe_tools
 ```
 
 ```html
 <!-- App.vue -->
 <script>
+  // 方式1
   import SeamlessScroll from '@linzhe_tools/seamless-scroll'
+  // 方式2 推荐
+  import { SeamlessScroll } from 'linzhe_tools'
 </script>
 <template>
   <div>默认滚动</div>

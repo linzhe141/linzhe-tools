@@ -1,8 +1,7 @@
 {
-  "name": "linzhe_tools",
-  "type": "module",
-  "version": "1.0.14",
+  "private": "true",
   "description": "",
+  "type": "module",
   "workspaces": {
     "packages": [
       "packages/*",
@@ -11,29 +10,20 @@
   },
   "scripts": {
     "dev": "pnpm run -C play dev",
+    "buildANDpublish": "node script/index.js",
+    "publish:seamlessScroll": "pnpm run -C packages/seamlessScroll publish2npm",
+    "publish:numberScroll": "pnpm run -C packages/numberScroll publish2npm",
+    "publish:carousel": "pnpm run -C packages/carousel publish2npm",
+    "publish:linzheTools": "pnpm run -C packages/linzheTools publish2npm",
     "build:seamlessScroll": "pnpm run -C packages/seamlessScroll build",
     "build:numberScroll": "pnpm run -C packages/numberScroll build",
-    "build:carousel": "pnpm run -C packages/carousel build"
+    "build:carousel": "pnpm run -C packages/carousel build",
+    "build:linzheTools": "pnpm run -C packages/linzheTools build"
   },
-  "keywords": [
-    "vue3",
-    "seamless scroll",
-    "step scroll",
-    "number scroll",
-    "carousel",
-    "无限滚动",
-    "分步滚动",
-    "数字滚动",
-    "轮播"
-  ],
   "author": "linzhe141@qq.com",
   "license": "ISC",
   "peerDependencies": {
     "vue": "^3.2.36"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/linzhe141/linzhe_tools.git"
   },
   "dependencies": {
     "@linzhe_tools/carousel": "workspace:*",
@@ -50,7 +40,9 @@
     "@types/vue": "^2.0.0",
     "@vitejs/plugin-vue": "^4.0.0",
     "@vue/compiler-sfc": "^3.2.47",
+    "chalk": "^5.2.0",
     "dayjs": "^1.11.7",
+    "execa": "^7.1.1",
     "postcss": "^8.4.21",
     "rollup": "^3.17.3",
     "rollup-plugin-css-only": "^4.3.0",

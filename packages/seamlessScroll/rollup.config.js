@@ -6,7 +6,6 @@ import typescript from 'rollup-plugin-typescript2'
 const name = 'seamlessScroll'
 const file = (type) => `dist/${name}.${type}.js`
 
-export { name, file }
 export default {
   input: 'index.ts',
   output: [

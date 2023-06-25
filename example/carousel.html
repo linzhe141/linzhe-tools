@@ -8,8 +8,11 @@
   </head>
   <body>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="../packages/carousel/dist/carousel.umd.js"></script>
-    <link href="../packages/carousel/dist/carousel.css" rel="stylesheet" />
+    <script src="../packages/linzheTools/dist/linzheTools.umd.js"></script>
+    <link
+      href="../packages/linzheTools/dist/linzheTools.css"
+      rel="stylesheet"
+    />
     <style>
       .content-item {
         line-height: 180px;
@@ -45,7 +48,7 @@
       </div>
     </div>
     <script>
-      const { Carousel, CarouselItem } = carousel
+      const { Carousel, CarouselItem } = linzheTools
       const app = Vue.createApp({
         data() {
           return {

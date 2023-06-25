@@ -9,9 +9,9 @@
   <body>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="https://cdn.bootcdn.net/ajax/libs/dayjs/1.11.7/dayjs.min.js"></script>
-    <script src="../packages/numberScroll/dist/numberScroll.umd.js"></script>
+    <script src="../packages/linzheTools/dist/linzheTools.umd.js"></script>
     <link
-      href="../packages/numberScroll/dist/numberScroll.css"
+      href="../packages/linzheTools/dist/linzheTools.css"
       rel="stylesheet"
     />
     <div id="app">
@@ -20,7 +20,7 @@
       <number-scroll :number-string="timeValue"></number-scroll>
     </div>
     <script>
-      const { NumberScroll } = numberScroll
+      const { NumberScroll } = linzheTools
       const app = Vue.createApp({
         setup() {
           const { onMounted, ref, computed } = Vue

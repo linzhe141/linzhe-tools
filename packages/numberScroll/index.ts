@@ -1,6 +1,6 @@
 import type { Plugin } from 'vue'
 import numberScroll from './src/numberScroll.vue'
-export type SFCWithInstall<T> = T & Plugin
+type SFCWithInstall<T> = T & Plugin
 const withInstall = <T>(comp: T) => {
   ;(comp as SFCWithInstall<T>).install = function (app) {
     app.component((comp as any).name, comp as any)

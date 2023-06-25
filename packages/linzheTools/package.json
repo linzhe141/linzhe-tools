@@ -1,0 +1,34 @@
+{
+  "name": "linzhe_tools",
+  "type": "module",
+  "main": "dist/linzheTools.umd.js",
+  "module": "dist/linzheTools.esm.js",
+  "version": "1.0.22",
+  "description": "",
+  "scripts": {
+    "publish2npm": "npm version patch && npm publish",
+    "build": "rm -rf dist && rollup -c"
+  },
+  "keywords": [
+    "vue3",
+    "seamless scroll",
+    "step scroll",
+    "number scroll",
+    "carousel",
+    "无限滚动",
+    "分步滚动",
+    "数字滚动",
+    "轮播"
+  ],
+  "author": "linzhe141@qq.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/linzhe141/linzhe_tools.git"
+  },
+  "dependencies": {
+    "@linzhe_tools/carousel": "latest",
+    "@linzhe_tools/number-scroll": "latest",
+    "@linzhe_tools/seamless-scroll": "latest"
+  },
+  "license": "ISC"
+}
