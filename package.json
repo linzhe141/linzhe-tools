@@ -10,7 +10,8 @@
   },
   "scripts": {
     "dev": "pnpm run -C play dev",
-    "buildANDpublish": "node script/index.js",
+    "build": "node script/build.js",
+    "buildANDpublish": "node script/buildANDpublish.js",
     "publish:seamlessScroll": "pnpm run -C packages/seamlessScroll publish2npm",
     "publish:numberScroll": "pnpm run -C packages/numberScroll publish2npm",
     "publish:carousel": "pnpm run -C packages/carousel publish2npm",
