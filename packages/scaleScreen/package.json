@@ -1,0 +1,32 @@
+{
+  "name": "@linzhe_tools/scale-screen",
+  "version": "1.0.1",
+  "type": "module",
+  "description": "vue3 scale screen component",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "readme.md",
+    "package.json"
+  ],
+  "scripts": {
+    "publish2npm": "npm version patch && npm publish",
+    "build": "rm -rf dist && rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/linzhe141/linzhe_tools/tree/main/packages/scaleScreen"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.0"
+  },
+  "keywords": [
+    "vue3",
+    "屏幕缩放",
+    "scale screen"
+  ],
+  "author": "linzhe141@qq.com",
+  "license": "ISC"
+}

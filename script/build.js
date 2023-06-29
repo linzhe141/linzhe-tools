@@ -16,6 +16,11 @@ const buildTask = [
     doneMessage: 'carousel组件打包已完成 🚀',
   },
   {
+    command: 'pnpm run build:scaleScreen',
+    startMessage: '开始打包scaleScreen组件 🚀',
+    doneMessage: 'scaleScreen组件打包已完成 🚀',
+  },
+  {
     command: 'pnpm run build:linzheTools',
     startMessage: '开始打包linzheTools 🚀',
     doneMessage: 'linzheTools打包已完成 🚀',

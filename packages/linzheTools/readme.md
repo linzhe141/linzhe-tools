@@ -14,3 +14,8 @@
 
 - [npm](https://www.npmjs.com/package/@linzhe_tools/carousel)
 - [readme](https://github.com/linzhe141/linzhe_tools/blob/main/packages/carousel/readme.md)
+
+## 🚀 ScaleScreen
+
+- [npm](https://www.npmjs.com/package/@linzhe_tools/scale-screen)
+- [readme](https://github.com/linzhe141/linzhe_tools/blob/main/packages/scaleScreen/readme.md)

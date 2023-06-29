@@ -1,6 +1,6 @@
 {
   "name": "@linzhe_tools/carousel",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "type": "module",
   "main": "dist/carousel.umd.js",
   "module": "dist/carousel.esm.js",
@@ -8,6 +8,11 @@
   "publishConfig": {
     "access": "public"
   },
+  "files": [
+    "dist",
+    "readme.md",
+    "package.json"
+  ],
   "scripts": {
     "publish2npm": "npm version patch && npm publish",
     "build": "rm -rf dist && rollup -c"

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/dayjs/1.11.7/dayjs.min.js"></script>
+    <script src="../packages/linzheTools/dist/linzheTools.umd.js"></script>
+    <link
+      href="../packages/linzheTools/dist/linzheTools.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      html,
+      body,
+      #app {
+        height: 100%;
+      }
+    </style>
+    <div id="app">
+      <scale-screen :number-string="numberValue">
+        <div style="height: 1080px; width: 1920px">
+          <img src="./test.jpg" alt="" />
+        </div>
+      </scale-screen>
+    </div>
+    <script>
+      const { ScaleScreen } = linzheTools
+      const app = Vue.createApp()
+      app.component('ScaleScreen', ScaleScreen)
+      app.mount('#app')
+    </script>
+  </body>
+</html>

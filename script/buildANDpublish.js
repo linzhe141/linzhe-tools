@@ -18,6 +18,11 @@ const componentTasks = [
     doneMessage: 'carousel组件打包已完成 🚀',
   },
   {
+    command: 'pnpm run build:scaleScreen',
+    startMessage: '开始打包scaleScreen组件 🚀',
+    doneMessage: 'scaleScreen组件打包已完成 🚀',
+  },
+  {
     command: 'pnpm run publish:seamlessScroll',
     startMessage: '开始发布seamlessScroll组件 🚀',
     doneMessage: 'seamlessScroll组件发布已完成 🚀',
@@ -31,6 +36,11 @@ const componentTasks = [
     command: 'pnpm run publish:carousel',
     startMessage: '开始发布carousel组件 🚀',
     doneMessage: 'carousel组件发布已完成 🚀',
+  },
+  {
+    command: 'pnpm run publish:scaleScreen',
+    startMessage: '开始发布scaleScreen组件 🚀',
+    doneMessage: 'scaleScreen组件发布已完成 🚀',
   },
 ]
 
