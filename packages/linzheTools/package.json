@@ -3,7 +3,7 @@
   "type": "module",
   "main": "dist/linzheTools.umd.js",
   "module": "dist/linzheTools.esm.js",
-  "version": "1.0.26",
+  "version": "1.0.27",
   "description": "基于vue3的UI工具库",
   "scripts": {
     "publish2npm": "npm version patch && npm publish",

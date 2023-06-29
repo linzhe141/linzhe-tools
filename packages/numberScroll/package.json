@@ -1,6 +1,6 @@
 {
   "name": "@linzhe_tools/number-scroll",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "type": "module",
   "main": "dist/numberScroll.umd.js",
   "module": "dist/numberScroll.esm.js",
