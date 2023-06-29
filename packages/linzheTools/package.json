@@ -1,16 +1,10 @@
 {
   "name": "linzhe_tools",
   "type": "module",
-  "types": "dist/packages/linzheTools/index.d.ts",
   "main": "dist/linzheTools.umd.js",
   "module": "dist/linzheTools.esm.js",
-  "version": "1.0.25",
-  "description": "",
-  "files": [
-    "dist",
-    "readme.md",
-    "package.json"
-  ],
+  "version": "1.0.26",
+  "description": "基于vue3的UI工具库",
   "scripts": {
     "publish2npm": "npm version patch && npm publish",
     "build": "rm -rf dist && rollup -c"
@@ -21,10 +15,12 @@
     "step scroll",
     "number scroll",
     "carousel",
+    "scale screen",
     "无限滚动",
     "分步滚动",
     "数字滚动",
-    "轮播"
+    "轮播",
+    "屏幕缩放"
   ],
   "author": "linzhe141@qq.com",
   "repository": {

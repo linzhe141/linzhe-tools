@@ -1,19 +1,13 @@
 {
   "name": "@linzhe_tools/carousel",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "type": "module",
-  "types": "dist/packages/carousel/index.d.ts",
   "main": "dist/carousel.umd.js",
   "module": "dist/carousel.esm.js",
   "description": "vue3 carousel component",
   "publishConfig": {
     "access": "public"
   },
-  "files": [
-    "dist",
-    "readme.md",
-    "package.json"
-  ],
   "scripts": {
     "publish2npm": "npm version patch && npm publish",
     "build": "rm -rf dist && rollup -c"
