@@ -4,7 +4,6 @@
     "outDir": "dist",
     "target": "ESNext",
     "module": "esnext",
-    "baseUrl": ".",
     "sourceMap": true,
     "moduleResolution": "node",
     "allowJs": false,
@@ -16,7 +15,7 @@
     "removeComments": false,
     "noImplicitAny": false,
     "rootDir": ".",
-    "types": [],
+    "baseUrl": ".",
     "paths": {
       "@linzhe_tools/*": ["packages/*"]
     }

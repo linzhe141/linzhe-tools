@@ -1,7 +1,8 @@
 {
   "name": "@linzhe_tools/seamless-scroll",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "type": "module",
+  "types": "dist/packages/seamlessScroll/index.d.ts",
   "main": "dist/seamlessScroll.umd.js",
   "module": "dist/seamlessScroll.esm.js",
   "description": "vue3 seamless scroll component",

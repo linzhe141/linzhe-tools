@@ -62,7 +62,7 @@ npm i -S linzhe_tools
 ```ts
 // main.ts
 // 方式1
-import '@linzhe_tools/scale-screen/dist/numberScroll.css'
+import '@linzhe_tools/scale-screen/dist/scaleScreen.css'
 // 方式2 推荐
 import 'linzhe_tools/dist/linzheTools.css'
 ```

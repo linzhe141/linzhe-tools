@@ -2,6 +2,7 @@ import { execa } from 'execa'
 import chalk from 'chalk'
 import { log, formatTime, runTask } from './utils.js'
 const componentTasks = [
+  // build
   {
     command: 'pnpm run build:seamlessScroll',
     startMessage: '开始打包seamlessScroll组件 🚀',
@@ -22,6 +23,7 @@ const componentTasks = [
     startMessage: '开始打包scaleScreen组件 🚀',
     doneMessage: 'scaleScreen组件打包已完成 🚀',
   },
+  // publish
   {
     command: 'pnpm run publish:seamlessScroll',
     startMessage: '开始发布seamlessScroll组件 🚀',

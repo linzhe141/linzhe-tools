@@ -1,7 +1,10 @@
 {
   "name": "@linzhe_tools/scale-screen",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
+  "types": "dist/packages/scaleScreen/index.d.ts",
+  "main": "dist/scaleScreen.umd.js",
+  "module": "dist/scaleScreen.esm.js",
   "description": "vue3 scale screen component",
   "publishConfig": {
     "access": "public"
