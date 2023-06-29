@@ -29,7 +29,7 @@ export function useCarousel(props: Props) {
 
   function startTimer() {
     cancleTimer()
-    timer = setInterval(() => {
+    timer = window.setInterval(() => {
       nextHandle()
     }, props.interval)
   }

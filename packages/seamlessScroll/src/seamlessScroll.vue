@@ -34,7 +34,7 @@ const startScrollAnimation = () => {
     // stepWaitTimeout后继续滚动
     if (Math.abs(y.value) % stepHeight === 0) {
       stopScrollAnimation()
-      setTimoutId = setTimeout(() => {
+      setTimoutId = window.setTimeout(() => {
         startScrollAnimation()
       }, stepWaitTimeout)
     } else {

@@ -53,7 +53,7 @@ export function useScaleScreen(props: Props) {
     let timer: number = 0
     return function (...args): void {
       if (timer) clearTimeout(timer)
-      timer = setTimeout(() => {
+      timer = window.setTimeout(() => {
         fn.apply(null, args)
         clearTimeout(timer)
       }, delay)
