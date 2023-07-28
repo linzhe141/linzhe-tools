@@ -1,9 +1,16 @@
-import { onMounted, ref, computed, onUnmounted } from 'vue'
+import { onMounted, ref, computed, onUnmounted, reactive } from 'vue'
+import screenfull from 'screenfull'
 type Props = {
   height: number
   width: number
 }
 export function useScaleScreen(props: Props) {
+  const isFullscreen = ref(false)
+  const slotProps = reactive({
+    isFullscreen,
+  })
+
+  const wrapper = ref<HTMLElement | null>(null)
   const scaleWrapper = ref<HTMLElement | null>(null)
 
   const scaleXNumber = ref(1)
@@ -11,7 +18,7 @@ export function useScaleScreen(props: Props) {
 
   const scaleWrapperStyle = computed(() => {
     return {
-      transform: `scale(${scaleXNumber.value}, ${scaleYNumber.value})`,
+      transform: `scale(${scaleXNumber.value}, ${scaleYNumber.value}) !important`,
     }
   })
 
@@ -27,8 +34,6 @@ export function useScaleScreen(props: Props) {
     // 首先根据props的宽高计算出内容的缩放比例
     let xk = props.width / realWidth
     let yk = props.height / realHeight
-    console.log(props.width)
-    console.log(realWidth)
 
     // 窗口的宽高
     const w = window.innerWidth
@@ -60,16 +65,37 @@ export function useScaleScreen(props: Props) {
     }
   }
   const resizeHandle = debounce(transformScale)
+  const fullScreen = () => {
+    screenfull.toggle(wrapper.value!)
+    isFullscreen.value = true
+  }
+  const exitScreen = () => {
+    screenfull.toggle(wrapper.value!)
+    isFullscreen.value = false
+  }
+  // TODO
+  // const keyDownHandle = (e: KeyboardEvent) => {
+  //   if (e.key === 'F11') {
+  //     e.preventDefault()
+  //     return false
+  //   }
+  // }
   onMounted(() => {
     getRealSize()
     transformScale()
     window.addEventListener('resize', resizeHandle)
+    // window.addEventListener('keydown', keyDownHandle)
   })
   onUnmounted(() => {
     window.removeEventListener('resize', resizeHandle)
+    // window.removeEventListener('keydown', keyDownHandle)
   })
   return {
     scaleWrapperStyle,
     scaleWrapper,
+    wrapper,
+    fullScreen,
+    exitScreen,
+    slotProps,
   }
 }

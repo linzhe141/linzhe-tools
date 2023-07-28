@@ -26,7 +26,8 @@
   "author": "linzhe141@qq.com",
   "license": "ISC",
   "peerDependencies": {
-    "vue": "^3.2.36"
+    "vue": "^3.2.36",
+    "screenfull": "^6.0.2"
   },
   "dependencies": {
     "@linzhe_tools/carousel": "workspace:*",
@@ -60,6 +61,7 @@
     "sass-loader": "^13.2.0",
     "typescript": "^4.9.3",
     "vite": "^4.1.0",
-    "vue": "^3.2.36"
+    "vue": "^3.2.36",
+    "screenfull": "^6.0.2"
   }
 }

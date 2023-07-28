@@ -1,6 +1,6 @@
 {
   "name": "@linzhe_tools/scale-screen",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "type": "module",
   "main": "dist/scaleScreen.umd.js",
   "module": "dist/scaleScreen.esm.js",
@@ -17,7 +17,8 @@
     "url": "https://github.com/linzhe141/linzhe_tools/tree/main/packages/scaleScreen"
   },
   "peerDependencies": {
-    "vue": "^3.2.0"
+    "vue": "^3.2.0",
+    "screenfull": "^6.0.2"
   },
   "keywords": [
     "vue3",

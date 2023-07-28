@@ -13,12 +13,20 @@ const props = withDefaults(defineProps<Props>(), {
   height: 1080,
   width: 1920,
 })
-const { scaleWrapper, scaleWrapperStyle } = useScaleScreen(props)
+const {
+  wrapper,
+  scaleWrapper,
+  scaleWrapperStyle,
+  fullScreen,
+  exitScreen,
+  slotProps,
+} = useScaleScreen(props)
+defineExpose({ fullScreen, exitScreen })
 </script>
 <template>
-  <div class="wrap">
+  <div class="wrap" ref="wrapper">
     <div class="scale-wrapper" ref="scaleWrapper" :style="scaleWrapperStyle">
-      <slot></slot>
+      <slot :slotProps="slotProps"></slot>
     </div>
   </div>
 </template>
