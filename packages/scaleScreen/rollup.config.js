@@ -16,13 +16,14 @@ export default {
       format: 'umd',
       globals: {
         vue: 'Vue',
+        screenfull: 'screenfull',
       },
     },
     {
       name,
       file: file('esm'),
       format: 'esm',
-    },
+    },  
   ],
   plugins: [
     typescript(),
@@ -31,5 +32,5 @@ export default {
       fileName: `${name}.css`,
     }),
   ],
-  external: ['vue'], // 规定哪些是外部引用的模块
+  external: ['vue', 'screenfull'], // 规定哪些是外部引用的模块，不大进行打包的模块
 }
