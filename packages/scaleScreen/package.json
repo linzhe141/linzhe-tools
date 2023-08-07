@@ -1,6 +1,6 @@
 {
   "name": "@linzhe_tools/scale-screen",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "type": "module",
   "main": "dist/scaleScreen.umd.js",
   "module": "dist/scaleScreen.esm.js",

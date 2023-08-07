@@ -1,6 +1,6 @@
 import { execa } from 'execa'
 import chalk from 'chalk'
-import { log, formatTime, runTask } from './utils.js'
+import { log, runTask } from './utils.js'
 const componentTasks = [
   // build
   {
@@ -47,13 +47,13 @@ const componentTasks = [
 ]
 
 async function initTools() {
-  log(chalk.yellow(formatTime()), chalk.green('开始打包linzheTools 🚀'))
+  log(chalk.green('开始打包linzheTools 🚀'))
   await execa('pnpm run build:linzheTools')
-  log(chalk.yellow(formatTime()), chalk.green('linzheTools已完成打包 🚀'))
+  log(chalk.green('linzheTools已完成打包 🚀'))
   log('================================')
-  log(chalk.yellow(formatTime()), chalk.green('linzheTools开始推送到npm 🚀'))
+  log(chalk.green('linzheTools开始推送到npm 🚀'))
   await execa('pnpm run publish:linzheTools')
-  log(chalk.yellow(formatTime()), chalk.green('已推送到npm linzhe_tools包 🚀'))
+  log(chalk.green('已推送到npm linzhe_tools 🚀'))
 }
 
 async function init() {

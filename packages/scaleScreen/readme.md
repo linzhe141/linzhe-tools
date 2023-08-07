@@ -15,7 +15,7 @@ const props = withDefaults(defineProps<Props>(), {
 })
 ```
 
-```vue
+```jsx
 <!-- scale-screen 插槽 -->
 <!-- isFullscreen:boolean; default:false -->
 <scale-screen v-slot="{ slotProps: { isFullscreen } }">
@@ -59,14 +59,14 @@ const props = withDefaults(defineProps<Props>(), {
       <div
         v-if="isFullscreen"
         v-on:click="bar"
-        style="position: absolute; cursor: pointer; right: 0;width:100px;height:100px"
+        style="position: absolute; cursor: pointer; right: 0;width:100px;height:100px;color: #fff"
       >
         退出全屏
       </div>
       <div
         v-else
         v-on:click="foo"
-        style="position: absolute; cursor: pointer; right: 0;width:100px;height:100px"
+        style="position: absolute; cursor: pointer; right: 0;width:100px;height:100px;color: #fff"
       >
         进入全屏
       </div>
@@ -153,14 +153,14 @@ function bar() {
         <div
           v-if="isFullscreen"
           v-on:click="bar"
-          style="position: absolute; cursor: pointer; right: 0;width:100px;height:100px"
+          style="position: absolute; cursor: pointer; right: 0;width:100px;height:100px;color: #fff"
         >
           退出全屏
         </div>
         <div
           v-else
           v-on:click="foo"
-          style="position: absolute; cursor: pointer; right: 0;width:100px;height:100px"
+          style="position: absolute; cursor: pointer; right: 0;width:100px;height:100px;color: #fff"
         >
           进入全屏
         </div>

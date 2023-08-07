@@ -31,6 +31,8 @@ export function useScaleScreen(props: Props) {
     realHeight = scaleWrapper.value!.clientHeight
   }
   function transformScale() {
+    isFullscreen.value = screenfull.isFullscreen
+
     // 首先根据props的宽高计算出内容的缩放比例
     let xk = props.width / realWidth
     let yk = props.height / realHeight
