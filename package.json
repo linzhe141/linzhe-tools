@@ -12,56 +12,30 @@
     "dev": "pnpm run -C play dev",
     "build": "node script/build.js",
     "buildANDpublish": "node script/buildANDpublish.js",
-    "publish:seamlessScroll": "pnpm run -C packages/seamlessScroll publish2npm",
-    "publish:numberScroll": "pnpm run -C packages/numberScroll publish2npm",
-    "publish:carousel": "pnpm run -C packages/carousel publish2npm",
-    "publish:scaleScreen": "pnpm run -C packages/scaleScreen publish2npm",
-    "publish:linzheTools": "pnpm run -C packages/linzheTools publish2npm",
-    "build:seamlessScroll": "pnpm run -C packages/seamlessScroll build",
-    "build:numberScroll": "pnpm run -C packages/numberScroll build",
-    "build:carousel": "pnpm run -C packages/carousel build",
-    "build:scaleScreen": "pnpm run -C packages/scaleScreen build",
-    "build:linzheTools": "pnpm run -C packages/linzheTools build"
+    "build:linzheTools": "pnpm run -C packages/linzheTools build:src",
+    "publish:components": "pnpm run -C packages/components publish2npm",
+    "publish:linzheTools": "pnpm run -C packages/linzheTools publish2npm"
   },
   "author": "linzhe141@qq.com",
   "license": "ISC",
   "peerDependencies": {
-    "vue": "^3.2.36",
-    "screenfull": "^6.0.2"
+    "screenfull": "^6.0.2",
+    "vue": "^3.2.36"
   },
   "dependencies": {
-    "@linzhe_tools/carousel": "workspace:*",
-    "@linzhe_tools/number-scroll": "workspace:*",
-    "@linzhe_tools/seamless-scroll": "workspace:*",
-    "@linzhe_tools/scale-screen": "workspace:*"
+    "@linzhe_tools/components": "workspace:*"
   },
   "devDependencies": {
-    "@babel/core": "^7.21.0",
-    "@rollup/plugin-babel": "^6.0.3",
-    "@rollup/plugin-commonjs": "^24.0.1",
-    "@rollup/plugin-json": "^6.0.0",
-    "@rollup/plugin-node-resolve": "^15.0.1",
-    "@rollup/plugin-typescript": "^11.0.0",
-    "@types/vue": "^2.0.0",
-    "@vitejs/plugin-vue": "^4.0.0",
-    "@vue/compiler-sfc": "^3.2.47",
-    "chalk": "^5.2.0",
-    "dayjs": "^1.11.7",
-    "execa": "^7.1.1",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "chalk": "^5.3.0",
+    "dayjs": "^1.11.9",
+    "execa": "^7.2.0",
     "nanospinner": "^1.1.0",
-    "postcss": "^8.4.21",
-    "rollup": "^3.17.3",
-    "rollup-plugin-css-only": "^4.3.0",
-    "rollup-plugin-postcss": "^4.0.2",
-    "rollup-plugin-sass": "^1.12.18",
-    "rollup-plugin-scss": "^4.0.0",
-    "rollup-plugin-typescript2": "^0.34.1",
-    "rollup-plugin-vue": "^6.0.0",
-    "sass": "^1.58.3",
-    "sass-loader": "^13.2.0",
-    "typescript": "^4.9.3",
-    "vite": "^4.1.0",
-    "vue": "^3.2.36",
-    "screenfull": "^6.0.2"
+    "sass": "^1.64.2",
+    "screenfull": "^6.0.2",
+    "typescript": "^4.9.5",
+    "vite": "^4.4.9",
+    "vite-plugin-dts": "^3.5.1",
+    "vue": "^3.2.4"
   }
 }

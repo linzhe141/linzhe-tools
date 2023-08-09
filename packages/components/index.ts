@@ -1,0 +1,5 @@
+export * from './carousel/index'
+export * from './numberScroll/index'
+export * from './scaleScreen/index'
+export * from './seamlessScroll/index'
+export * from './watermark/index'

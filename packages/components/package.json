@@ -1,0 +1,23 @@
+{
+  "name": "@linzhe_tools/components",
+  "version": "1.0.2",
+  "type": "module",
+  "main": "index.ts",
+  "module": "index.ts",
+  "description": "vue3 ui component",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "publish2npm": "npm version patch && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/linzhe141/linzhe_tools/tree/main/packages/carousel"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.0"
+  },
+  "author": "linzhe141@qq.com",
+  "license": "ISC"
+}

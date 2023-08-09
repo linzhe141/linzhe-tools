@@ -1,7 +1,10 @@
 <script setup lang="ts">
-import dayjs from 'dayjs'
 import { onMounted, ref, computed } from 'vue'
-import { CarouselItem, Carousel } from '@linzhe_tools/carousel'
+import dayjs from 'dayjs'
+import { SeamlessScroll } from '@linzhe_tools/components'
+import { NumberScroll } from '@linzhe_tools/components'
+import { Watermark } from '@linzhe_tools/components'
+import { CarouselItem, Carousel } from '@linzhe_tools/components'
 const num = ref(100)
 const time = ref(Date.now())
 const numberValue = computed(() => num.value + '')
@@ -47,86 +50,88 @@ onMounted(() => {
       </SeamlessScroll>
     </div>
     <div style="width: 340px; height: 180px">
-      <Carousel>
-        <CarouselItem
-          ><div
-            style="
-              line-height: 180px;
-              text-align: center;
-              font-size: 40px;
-              color: #fff;
-              background-color: #6e2e2e;
-            "
+      <Watermark text="测试水印" fill-style="rgba(255,0,0,0.99)">
+        <Carousel>
+          <CarouselItem
+            ><div
+              style="
+                line-height: 180px;
+                text-align: center;
+                font-size: 40px;
+                color: #fff;
+                background-color: #6e2e2e;
+              "
+            >
+              1
+            </div></CarouselItem
           >
-            1
-          </div></CarouselItem
-        >
-        <CarouselItem
-          ><div
-            style="
-              line-height: 180px;
-              text-align: center;
-              font-size: 40px;
-              color: #fff;
-              background-color: #1f611d;
-            "
+          <CarouselItem
+            ><div
+              style="
+                line-height: 180px;
+                text-align: center;
+                font-size: 40px;
+                color: #fff;
+                background-color: #1f611d;
+              "
+            >
+              2
+            </div></CarouselItem
           >
-            2
-          </div></CarouselItem
-        >
-        <CarouselItem
-          ><div
-            style="
-              line-height: 180px;
-              text-align: center;
-              font-size: 40px;
-              color: #fff;
-              background-color: #27b0b9;
-            "
+          <CarouselItem
+            ><div
+              style="
+                line-height: 180px;
+                text-align: center;
+                font-size: 40px;
+                color: #fff;
+                background-color: #27b0b9;
+              "
+            >
+              3
+            </div></CarouselItem
           >
-            3
-          </div></CarouselItem
-        >
-        <CarouselItem
-          ><div
-            style="
-              line-height: 180px;
-              text-align: center;
-              font-size: 40px;
-              color: #fff;
-              background-color: #ff0000;
-            "
+          <CarouselItem
+            ><div
+              style="
+                line-height: 180px;
+                text-align: center;
+                font-size: 40px;
+                color: #fff;
+                background-color: #ff0000;
+              "
+            >
+              4
+            </div></CarouselItem
           >
-            4
-          </div></CarouselItem
-        >
-        <CarouselItem
-          ><div
-            style="
-              line-height: 180px;
-              text-align: center;
-              font-size: 40px;
-              color: #fff;
-              background-color: #cc00ff;
-            "
+          <CarouselItem
+            ><div
+              style="
+                line-height: 180px;
+                text-align: center;
+                font-size: 40px;
+                color: #fff;
+                background-color: #cc00ff;
+              "
+            >
+              5
+            </div></CarouselItem
           >
-            5
-          </div></CarouselItem
-        >
-        <CarouselItem
-          ><div
-            style="
-              line-height: 180px;
-              text-align: center;
-              font-size: 40px;
-              color: #fff;
-              background-color: #ff8800;
-            "
+          <CarouselItem
+            ><div
+              style="
+                line-height: 180px;
+                text-align: center;
+                font-size: 40px;
+                color: #fff;
+                background-color: #ff8800;
+              "
+            >
+              6
+            </div></CarouselItem
           >
-            6
-          </div></CarouselItem
-        >
-      </Carousel>
+        </Carousel>
+      </Watermark>
     </div>
   </div>
 </template>

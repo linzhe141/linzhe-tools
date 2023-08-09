@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "declaration": true,
-    "outDir": "dist",
     "target": "ESNext",
     "module": "esnext",
     "sourceMap": true,
@@ -17,7 +16,7 @@
     "rootDir": ".",
     "baseUrl": ".",
     "paths": {
-      "@linzhe_tools/*": ["packages/*"]
+      "@@linzhe_tools/*": ["packages/*"]
     }
   },
   "exclude": ["script/*/*"]

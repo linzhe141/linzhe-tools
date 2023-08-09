@@ -1,13 +1,14 @@
 {
   "name": "linzhe_tools",
   "type": "module",
-  "main": "dist/linzheTools.umd.js",
-  "module": "dist/linzheTools.esm.js",
-  "version": "1.0.30",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "version": "1.1.2",
   "description": "基于vue3的UI工具库",
   "scripts": {
     "publish2npm": "npm version patch && npm publish",
-    "build": "rm -rf dist && rollup -c"
+    "build:types": "rm -rf types && vue-tsc -p tsconfig.json --declaration --emitDeclarationOnly",
+    "build:src": "rm -rf dist && vite build"
   },
   "keywords": [
     "vue3",
@@ -16,11 +17,13 @@
     "number scroll",
     "carousel",
     "scale screen",
+    "watermark",
     "无限滚动",
     "分步滚动",
     "数字滚动",
     "轮播",
-    "屏幕缩放"
+    "屏幕缩放",
+    "水印"
   ],
   "author": "linzhe141@qq.com",
   "repository": {
@@ -28,10 +31,7 @@
     "url": "https://github.com/linzhe141/linzhe_tools.git"
   },
   "dependencies": {
-    "@linzhe_tools/carousel": "latest",
-    "@linzhe_tools/number-scroll": "latest",
-    "@linzhe_tools/seamless-scroll": "latest",
-    "@linzhe_tools/scale-screen": "latest",
+    "@linzhe_tools/components": "latest",
     "screenfull": "^6.0.0"
   },
   "license": "ISC"
