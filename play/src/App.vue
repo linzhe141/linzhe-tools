@@ -18,39 +18,39 @@ onMounted(() => {
 </script>
 
 <template>
-  <div>
-    <NumberScroll :number-string="numberValue" />
-    <p>==============</p>
-    <NumberScroll :number-string="timeValue" />
+  <Watermark text="测试水印" fill-style="rgba(255,0,0,0.99)">
     <div>
-      <div>默认滚动</div>
-      <SeamlessScroll :height="108" style="background-color: #ccc">
-        <div style="line-height: 22px">11111111111111111111</div>
-        <div style="line-height: 22px">22222222222222222222</div>
-        <div style="line-height: 22px">33333333333333333333</div>
-        <div style="line-height: 22px">44444444444444444444</div>
-        <div style="line-height: 22px">55555555555555555555</div>
-        <div style="line-height: 22px">66666666666666666666</div>
-      </SeamlessScroll>
-    </div>
-    <div>
-      <div>分步滚动</div>
-      <SeamlessScroll
-        :height="108"
-        :step-height="22"
-        :step-wait-timeout="2000"
-        style="background-color: #ccc"
-      >
-        <div style="line-height: 22px">11111111111111111111</div>
-        <div style="line-height: 22px">22222222222222222222</div>
-        <div style="line-height: 22px">33333333333333333333</div>
-        <div style="line-height: 22px">44444444444444444444</div>
-        <div style="line-height: 22px">55555555555555555555</div>
-        <div style="line-height: 22px">66666666666666666666</div>
-      </SeamlessScroll>
-    </div>
-    <div style="width: 340px; height: 180px">
-      <Watermark text="测试水印" fill-style="rgba(255,0,0,0.99)">
+      <NumberScroll :number-string="numberValue" />
+      <p>==============</p>
+      <NumberScroll :number-string="timeValue" />
+      <div>
+        <div>默认滚动</div>
+        <SeamlessScroll :height="108" style="background-color: #ccc">
+          <div style="line-height: 22px">11111111111111111111</div>
+          <div style="line-height: 22px">22222222222222222222</div>
+          <div style="line-height: 22px">33333333333333333333</div>
+          <div style="line-height: 22px">44444444444444444444</div>
+          <div style="line-height: 22px">55555555555555555555</div>
+          <div style="line-height: 22px">66666666666666666666</div>
+        </SeamlessScroll>
+      </div>
+      <div>
+        <div>分步滚动</div>
+        <SeamlessScroll
+          :height="108"
+          :step-height="22"
+          :step-wait-timeout="2000"
+          style="background-color: #ccc"
+        >
+          <div style="line-height: 22px">11111111111111111111</div>
+          <div style="line-height: 22px">22222222222222222222</div>
+          <div style="line-height: 22px">33333333333333333333</div>
+          <div style="line-height: 22px">44444444444444444444</div>
+          <div style="line-height: 22px">55555555555555555555</div>
+          <div style="line-height: 22px">66666666666666666666</div>
+        </SeamlessScroll>
+      </div>
+      <div style="width: 340px; height: 180px">
         <Carousel>
           <CarouselItem
             ><div
@@ -131,9 +131,9 @@ onMounted(() => {
             </div></CarouselItem
           >
         </Carousel>
-      </Watermark>
+      </div>
     </div>
-  </div>
+  </Watermark>
 </template>
 
 <style scoped></style>

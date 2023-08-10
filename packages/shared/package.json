@@ -1,10 +1,10 @@
 {
-  "name": "@linzhe_tools/components",
-  "version": "1.0.3",
+  "name": "@linzhe_tools/shared",
+  "version": "1.0.0",
   "type": "module",
   "main": "index.ts",
   "module": "index.ts",
-  "description": "vue3 ui component",
+  "description": "linzhe_tools shared utils",
   "publishConfig": {
     "access": "public"
   },
@@ -13,13 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/linzhe141/linzhe_tools/tree/main/packages/components"
-  },
-  "peerDependencies": {
-    "vue": "^3.2.0"
-  },
-  "dependencies": {
-    "screenfull": "^6.0.0"
+    "url": "https://github.com/linzhe141/linzhe_tools/tree/main/packages/shared"
   },
   "author": "linzhe141@qq.com",
   "license": "ISC"

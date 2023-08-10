@@ -1,4 +1,5 @@
 import { onMounted, ref, computed, onUnmounted, reactive } from 'vue'
+import { debounce } from '@linzhe_tools/shared'
 import screenfull from 'screenfull'
 import { Props } from './type'
 export function useScaleScreen(props: Props) {
@@ -52,16 +53,6 @@ export function useScaleScreen(props: Props) {
     scaleWrapper.value!.style.height = resizeHeight + 'px'
     scaleXNumber.value = (resizeWidth / props.width) * xk
     scaleYNumber.value = (resizeHeight / props.height) * yk
-  }
-  function debounce(fn: Function, delay: number = 100) {
-    let timer: number = 0
-    return function (...args): void {
-      if (timer) clearTimeout(timer)
-      timer = window.setTimeout(() => {
-        fn.apply(null, args)
-        clearTimeout(timer)
-      }, delay)
-    }
   }
   const resizeHandle = debounce(transformScale)
   const fullScreen = () => {
