@@ -17,7 +17,9 @@
     "rootDir": ".",
     "baseUrl": ".",
     "paths": {
-      "@linzhe_tools/*": ["packages/*"]
+      "@linzhe_tools/*": ["packages/*"],
+      "linzheTools": ["packages/linzheTools/dist/es/linzheTools"],
+      "linzheTools/style.css": ["packages/linzheTools/dist/style/style.css"]
     }
   },
   "exclude": ["script/*/*"]

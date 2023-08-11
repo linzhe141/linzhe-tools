@@ -9,5 +9,8 @@
   },
   "peerDependencies": {
     "vue": "^3.2.45"
+  },
+  "dependencies": {
+    "@types/node": "^20.4.9"
   }
 }
