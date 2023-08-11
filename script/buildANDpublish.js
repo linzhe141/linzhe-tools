@@ -5,11 +5,11 @@ const componentTasks = [
   // build
 
   // publish
-  // {
-  //   command: 'pnpm run publish:components',
-  //   startMessage: '开始发布components 🚀',
-  //   doneMessage: 'components发布已完成 🚀',
-  // },
+  {
+    command: 'pnpm run publish:components',
+    startMessage: '开始发布components 🚀',
+    doneMessage: 'components发布已完成 🚀',
+  },
   // {
   //   command: 'pnpm run publish:shared',
   //   startMessage: '开始发布shared 🚀',

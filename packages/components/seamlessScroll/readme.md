@@ -25,7 +25,7 @@ const props = withDefaults(defineProps<Partial<Props>>(), {
 
 ```html
 <script src="../packages/linzheTools/dist/linzheTools.umd.js"></script>
-<link href="../packages/linzheTools/dist/style.css" rel="stylesheet" />
+<link href="../packages/linzheTools/dist/style/style.css" rel="stylesheet" />
 <div id="app">
   <seamless-scroll :height="108" style="background-color: #ccc">
     <div style="line-height: 22px">11111111111111111111</div>

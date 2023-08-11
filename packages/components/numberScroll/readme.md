@@ -16,8 +16,8 @@ type Props = {
 ```html
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script src="https://cdn.bootcdn.net/ajax/libs/dayjs/1.11.7/dayjs.min.js"></script>
-<script src="../packages/linzheTools/dist/index.umd.js"></script>
-<link href="../packages/linzheTools/dist/style.css" rel="stylesheet" />
+<script src="../packages/linzheTools/dist/umd/index.js"></script>
+<link href="../packages/linzheTools/dist/style/style.css" rel="stylesheet" />
 <div id="app">
   <number-scroll :number-string="numberValue"></number-scroll>
   <p>==============</p>
@@ -57,7 +57,7 @@ npm i -S linzhe_tools
 
 ```ts
 // main.ts
-import 'linzhe_tools/dist/style.css'
+import 'linzhe_tools/style.css'
 ```
 
 ```html
