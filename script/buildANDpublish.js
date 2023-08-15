@@ -5,11 +5,11 @@ const componentTasks = [
   // build
 
   // publish
-  // {
-  //   command: 'pnpm run publish:components',
-  //   startMessage: '开始发布components 🚀',
-  //   doneMessage: 'components发布已完成 🚀',
-  // },
+  {
+    command: 'pnpm run publish:components',
+    startMessage: '开始发布components 🚀',
+    doneMessage: 'components发布已完成 🚀',
+  },
   // {
   //   command: 'pnpm run publish:shared',
   //   startMessage: '开始发布shared 🚀',
@@ -22,9 +22,9 @@ async function initTools() {
   await execa('pnpm run build:linzheTools')
   log(chalk.green('linzheTools已完成打包 🚀'))
   log('================================')
-  // log(chalk.green('linzheTools开始推送到npm 🚀'))
-  // await execa('pnpm run publish:linzheTools')
-  // log(chalk.green('已推送到npm linzhe_tools 🚀'))
+  log(chalk.green('linzheTools开始推送到npm 🚀'))
+  await execa('pnpm run publish:linzheTools')
+  log(chalk.green('已推送到npm linzhe_tools 🚀'))
 }
 
 async function init() {

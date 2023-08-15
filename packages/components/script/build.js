@@ -1,9 +1,9 @@
 import fs from 'fs-extra'
 import { fileURLToPath } from 'url'
 import { resolve, dirname, join } from 'path'
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
 async function copyDts() {
-  const __filename = fileURLToPath(import.meta.url)
-  const __dirname = dirname(__filename)
   const componentsDirPath = resolve(__dirname, '../')
   const result = await traverseDirectory(componentsDirPath)
   const dtsPaths = result.filter((path) => path.includes('.d.ts'))
@@ -28,4 +28,17 @@ async function traverseDirectory(dirPath, result = []) {
   }
   return result
 }
-copyDts()
+
+async function createInput() {
+  const typesPath = resolve(
+    __dirname,
+    '../../linzheTools/dist/types/index.d.ts'
+  )
+  const code = `export * from './components/index';`
+  fs.outputFile(typesPath, code)
+}
+async function main() {
+  await copyDts()
+  await createInput()
+}
+main()
