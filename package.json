@@ -12,9 +12,10 @@
     "dev": "pnpm run -C play dev",
     "build": "node script/build.js",
     "buildANDpublish": "node script/buildANDpublish.js",
-    "build:linzheTools": "pnpm run -C packages/linzheTools build:src",
+    "build:linzheTools": "pnpm run -C packages/linzheTools build:src & pnpm run build:components",
     "publish:shared": "pnpm run -C packages/shared publish2npm",
     "publish:components": "pnpm run -C packages/components publish2npm",
+    "build:components": "pnpm run -C packages/components build:types",
     "publish:linzheTools": "pnpm run -C packages/linzheTools publish2npm"
   },
   "author": "linzhe141@qq.com",

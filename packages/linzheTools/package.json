@@ -3,7 +3,8 @@
   "type": "module",
   "main": "./dist/cjs/linzheTools/index.js",
   "module": "./dist/es/linzheTools/index.js",
-  "version": "1.1.5",
+  "types": "./index.d.ts",
+  "version": "1.1.9",
   "exports": {
     ".": {
       "import": "./dist/es/linzheTools/index.js",
@@ -14,10 +15,13 @@
       "require": "./dist/style/style.css"
     }
   },
+  "files": [
+    "dist"
+  ],
   "description": "基于vue3的UI工具库",
   "scripts": {
     "publish2npm": "npm version patch && npm publish",
-    "build:types": "rm -rf types && vue-tsc -p tsconfig.json --declaration --emitDeclarationOnly",
+    "build:types": "vue-tsc --declaration --emitDeclarationOnly",
     "build:src": "rm -rf dist && node script/build.js"
   },
   "keywords": [

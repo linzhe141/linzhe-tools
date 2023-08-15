@@ -1,6 +1,6 @@
 {
   "name": "@linzhe_tools/components",
-  "version": "1.0.4",
+  "version": "1.0.7",
   "type": "module",
   "main": "index.ts",
   "module": "index.ts",
@@ -9,7 +9,8 @@
     "access": "public"
   },
   "scripts": {
-    "publish2npm": "npm version patch && npm publish"
+    "publish2npm": "npm version patch && npm publish",
+    "build:types": "vue-tsc --declaration --emitDeclarationOnly & node script/build.js"
   },
   "repository": {
     "type": "git",
