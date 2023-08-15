@@ -4,7 +4,7 @@
   "main": "./dist/cjs/linzheTools/index.js",
   "module": "./dist/es/linzheTools/index.js",
   "types": "./dist/types/index.d.ts",
-  "version": "1.1.10",
+  "version": "1.1.11",
   "exports": {
     ".": {
       "import": "./dist/es/linzheTools/index.js",
