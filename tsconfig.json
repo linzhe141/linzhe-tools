@@ -15,6 +15,7 @@
     "noImplicitAny": false,
     "rootDir": ".",
     "baseUrl": ".",
+    "forceConsistentCasingInFileNames": true,
     "paths": {
       "@linzhe_tools/*": ["packages/*"],
       "linzheTools": ["packages/linzheTools/dist/es/linzheTools"],

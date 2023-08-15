@@ -10,11 +10,11 @@ const inputTypesPath = resolve(__dirname, '../dist/types/index.d.ts')
 async function copyDts() {
   const result = await traverseDirectory(componentsDirPath)
   const dtsPaths = result.filter((path) => path.includes('.d.ts'))
-  dtsPaths.forEach(async (path) => {
+  for (const path of dtsPaths) {
     const [_, target] = path.split('packages')
     await fs.copy(path, join(typesPath, target))
     await fs.remove(path)
-  })
+  }
 }
 async function traverseDirectory(dirPath, result = []) {
   const files = await fs.readdir(dirPath)
@@ -33,7 +33,7 @@ async function traverseDirectory(dirPath, result = []) {
 
 async function createInput() {
   const code = `export * from './components/index';`
-  fs.outputFile(inputTypesPath, code)
+  await fs.outputFile(inputTypesPath, code)
 }
 export async function buildTypes() {
   await copyDts()

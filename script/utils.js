@@ -15,7 +15,8 @@ export async function runTask(tasks) {
     log(chalk.green(task.startMessage))
     try {
       const spinner = createSpinner('building').start()
-      await execa(task.command)
+      const { stdout } = await execa(task.command)
+      log(chalk.green(`[${task.command}] ${stdout}`))
       spinner.success()
       log(chalk.green(task.doneMessage))
     } catch (error) {
