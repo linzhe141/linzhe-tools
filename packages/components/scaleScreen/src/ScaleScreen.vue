@@ -17,21 +17,21 @@ const {
 defineExpose({ fullScreen, exitScreen })
 </script>
 <template>
-  <div class="wrap" ref="wrapper">
-    <div class="scale-wrapper" ref="scaleWrapper" :style="scaleWrapperStyle">
+  <div class="linzhe-tools-scale-screen-wrap" ref="wrapper">
+    <div class="container" ref="scaleWrapper" :style="scaleWrapperStyle">
       <slot :slotProps="slotProps"></slot>
     </div>
   </div>
 </template>
-<style lang="scss" scoped>
-.wrap {
+<style lang="scss">
+.linzhe-tools-scale-screen-wrap {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  .scale-wrapper {
+  .container {
     transition: all 0.05s ease-in;
     transform-origin: 0 0;
   }

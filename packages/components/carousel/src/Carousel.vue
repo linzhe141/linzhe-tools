@@ -16,11 +16,11 @@ const {
 </script>
 <template>
   <div
-    class="wrap"
+    class="linzhe-tools-carousel-wrap"
     @mouseleave="mouseleaveHandle"
     @mouseenter="mouseenterHandle"
   >
-    <Transition name="carousel-arrow-left">
+    <Transition name="linzhe-tools-carousel-arrow-left">
       <div v-show="showArrow" class="btn prev-btn" @click="prevHandle">
         <svg width="36" height="36">
           <polygon
@@ -33,7 +33,7 @@ const {
         </svg>
       </div>
     </Transition>
-    <Transition name="carousel-arrow-right">
+    <Transition name="linzhe-tools-carousel-arrow-right">
       <div v-show="showArrow" class="btn next-btn" @click="nextHandle">
         <svg width="36" height="36">
           <polygon
@@ -51,8 +51,8 @@ const {
     </div>
   </div>
 </template>
-<style lang="scss" scoped>
-.wrap {
+<style lang="scss">
+.linzhe-tools-carousel-wrap {
   overflow: hidden;
   position: relative;
   height: 100%;
@@ -85,16 +85,16 @@ const {
     width: 100%;
   }
 }
-.carousel-arrow-left-enter-from,
-.carousel-arrow-left-leave-to,
-.carousel-arrow-right-enter-from,
-.carousel-arrow-right-leave-to {
+.linzhe-tools-carousel-arrow-left-enter-from,
+.linzhe-tools-carousel-arrow-left-leave-to,
+.linzhe-tools-carousel-arrow-right-enter-from,
+.linzhe-tools-carousel-arrow-right-leave-to {
   opacity: 0;
 }
-.carousel-arrow-left-enter-active,
-.carousel-arrow-left-leave-active,
-.carousel-arrow-right-enter-active,
-.carousel-arrow-right-leave-active {
+.linzhe-tools-carousel-arrow-left-enter-active,
+.linzhe-tools-carousel-arrow-left-leave-active,
+.linzhe-tools-carousel-arrow-right-enter-active,
+.linzhe-tools-carousel-arrow-right-leave-active {
   transition: opacity 0.3s ease;
 }
 </style>

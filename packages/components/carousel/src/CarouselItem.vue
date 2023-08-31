@@ -6,15 +6,15 @@ const { isAnimation, wrapItemStyle } = useCarouselItem()
 <template>
   <div
     ref="itemDomRef"
-    class="wrap-item"
+    class="linzhe-tools-carousel-item-wrap"
     :class="{ 'is-animation': isAnimation }"
     :style="wrapItemStyle"
   >
     <slot></slot>
   </div>
 </template>
-<style lang="scss" scoped>
-.wrap-item {
+<style lang="scss">
+.linzhe-tools-carousel-item-wrap {
   position: absolute;
   width: 100%;
   height: 100%;

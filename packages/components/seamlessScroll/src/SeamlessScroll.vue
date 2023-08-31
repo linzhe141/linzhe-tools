@@ -11,7 +11,10 @@ const { style, scrollContentRef, stopScrollAnimation, startScrollAnimation } =
   useSeamlessScroll(props)
 </script>
 <template>
-  <div class="wrap" :style="{ height: height + 'px', overflow: 'hidden' }">
+  <div
+    class="linzhe-tools-seamless-scroll-wrap"
+    :style="{ height: height + 'px', overflow: 'hidden' }"
+  >
     <div
       ref="scrollContentRef"
       :style="style"

@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { ref } from 'vue'
 import { Props } from './type'
 import { useWatermark } from './useWatermark'
 defineOptions({ name: 'Watermark' })
@@ -11,17 +12,17 @@ const props = withDefaults(defineProps<Partial<Props>>(), {
 const { watermarkWrapper } = useWatermark(props)
 </script>
 <template>
-  <div class="wrap">
-    <div class="watermark-wrapper" ref="watermarkWrapper">
+  <div class="linzhe-tools-watermark-wrap">
+    <div class="container" ref="watermarkWrapper">
       <slot></slot>
     </div>
   </div>
 </template>
-<style lang="scss" scoped>
-.wrap {
+<style lang="scss">
+.linzhe-tools-watermark-wrap {
   width: 100%;
   height: 100%;
-  .watermark-wrapper {
+  .container {
     position: relative;
     width: 100%;
     height: 100%;
