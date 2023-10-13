@@ -67,13 +67,13 @@ const props = withDefaults(defineProps<Partial<Props>>(), {
 - 构建工具使用
 
 ```properties
-npm i -S linzhe_tools
+npm i -S linzhe-tools
 ```
 
 ```html
 <!-- App.vue -->
 <script>
-  import { SeamlessScroll } from 'linzhe_tools'
+  import { SeamlessScroll } from 'linzhe-tools'
 </script>
 <template>
   <div>默认滚动</div>

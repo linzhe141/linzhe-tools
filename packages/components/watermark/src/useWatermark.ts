@@ -1,5 +1,5 @@
 import { onMounted, onUnmounted, ref } from 'vue'
-import { debounce } from '@linzhe_tools/shared'
+import { debounce } from '@linzhe-tools/shared'
 import { Props } from './type'
 export function useWatermark(props: Props) {
   let canvas

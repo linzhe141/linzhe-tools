@@ -1,10 +1,10 @@
 {
-  "name": "@linzhe_tools/shared",
-  "version": "1.0.1",
+  "name": "@linzhe-tools/shared",
+  "version": "0.0.1",
   "type": "module",
   "main": "index.ts",
   "module": "index.ts",
-  "description": "linzhe_tools shared utils",
+  "description": "linzhe-tools shared utils",
   "publishConfig": {
     "access": "public"
   },
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/linzhe141/linzhe_tools/tree/main/packages/shared"
+    "url": "https://github.com/linzhe141/linzhe-tools/tree/main/packages/shared"
   },
   "author": "linzhe141@qq.com",
   "license": "ISC"

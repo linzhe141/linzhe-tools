@@ -18,7 +18,7 @@ async function runBuild() {
     console.log(chalk.green('style.css文件成功抽取到dist/style目录下!'))
     await buildTypes()
     console.log(
-      chalk.green('@linzhe_tools/components的.d.ts已剪切到dist/types下!')
+      chalk.green('@linzhe-tools/components的.d.ts已剪切到dist/types下!')
     )
   } catch (error) {
     console.log(chalk.red('Vite build failed!'))

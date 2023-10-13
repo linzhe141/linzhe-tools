@@ -44,18 +44,18 @@ const props = withDefaults(defineProps<Partial<Props>>(), {
 - 构建工具使用
 
 ```properties
-npm i -S linzhe_tools
+npm i -S linzhe-tools
 ```
 
 ```ts
 // main.ts
-import 'linzhe_tools/style.css'
+import 'linzhe-tools/style.css'
 ```
 
 ```html
 <!-- App.vue -->
 <script>
-  import { Watermark } from '@linzhe_tools/components'
+  import { Watermark } from '@linzhe-tools/components'
 </script>
 <template>
   <div style="height: 500px">

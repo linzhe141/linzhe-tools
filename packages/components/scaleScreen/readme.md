@@ -102,18 +102,18 @@ const props = withDefaults(defineProps<Partial<Props>>(), {
 - 构建工具使用
 
 ```properties
-npm i -S linzhe_tools
+npm i -S linzhe-tools
 ```
 
 ```ts
 // main.ts
-import 'linzhe_tools/style.css'
+import 'linzhe-tools/style.css'
 ```
 
 ```vue
 <!-- App.vue -->
 <script lang="ts" setup>
-import { ScaleScreen } from 'linzhe_tools'
+import { ScaleScreen } from 'linzhe-tools'
 
 import { ref } from 'vue'
 const scaleScreenRef = ref<InstanceType<typeof ScaleScreen> | null>(null)

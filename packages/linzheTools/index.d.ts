@@ -1,1 +1,1 @@
-export * from '@linzhe_tools/components';
+export * from '@linzhe-tools/components'

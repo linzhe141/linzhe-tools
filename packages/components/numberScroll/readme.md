@@ -52,19 +52,19 @@ type Props = {
 - 构建工具使用
 
 ```properties
-npm i -S linzhe_tools
+npm i -S linzhe-tools
 ```
 
 ```ts
 // main.ts
-import 'linzhe_tools/style.css'
+import 'linzhe-tools/style.css'
 ```
 
 ```html
 <!-- App.vue -->
 <script lang="ts" setup>
   import dayjs from 'dayjs'
-  import { NumberScroll } from 'linzhe_tools'
+  import { NumberScroll } from 'linzhe-tools'
 
   import { onMounted, ref, computed } from 'vue'
   const num = ref(100)

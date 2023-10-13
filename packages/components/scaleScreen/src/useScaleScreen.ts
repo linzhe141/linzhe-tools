@@ -1,5 +1,5 @@
 import { onMounted, ref, computed, onUnmounted, reactive } from 'vue'
-import { debounce } from '@linzhe_tools/shared'
+import { debounce } from '@linzhe-tools/shared'
 import screenfull from 'screenfull'
 import { Props } from './type'
 export function useScaleScreen(props: Props) {

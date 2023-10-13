@@ -17,7 +17,7 @@
     "baseUrl": ".",
     "forceConsistentCasingInFileNames": true,
     "paths": {
-      "@linzhe_tools/*": ["packages/*"],
+      "@linzhe-tools/*": ["packages/*"],
       "linzheTools": ["packages/linzheTools/dist/es/linzheTools"],
       "linzheTools/style.css": ["packages/linzheTools/dist/style/style.css"]
     }
