@@ -24,8 +24,8 @@ const props = withDefaults(defineProps<Partial<Props>>(), {
 
 ```html
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-<script src="../packages/linzheTools/dist/umd/index.js"></script>
-<link href="../packages/linzheTools/dist/style/style.css" rel="stylesheet" />
+<script src="../packages/linzhe-tools/dist/umd/index.js"></script>
+<link href="../packages/linzhe-tools/dist/style/style.css" rel="stylesheet" />
 <div id="app">
   <div style="height: 500px">
     <watermark text="测试水印" fill-style="rgba(255,0,0,0.99)">

@@ -10,7 +10,7 @@
   },
   "scripts": {
     "dev": "pnpm run -C play dev",
-    "build:linzheTools": "pnpm run -C packages/linzheTools build:types & pnpm run -C packages/linzheTools build:src",
+    "build:linzhe-tools": "pnpm run -C packages/linzhe-tools build:types & pnpm run -C packages/linzhe-tools build:src",
     "changeset": "changeset",
     "vp": "changeset version",
     "release": "changeset publish"

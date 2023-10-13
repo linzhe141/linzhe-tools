@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { onMounted, ref, computed } from 'vue'
 import dayjs from 'dayjs'
-import { SeamlessScroll } from 'linzheTools'
-import { NumberScroll } from 'linzheTools'
-import { Watermark } from 'linzheTools'
-import { CarouselItem, Carousel } from 'linzheTools'
+import { SeamlessScroll } from 'linzhe-tools'
+import { NumberScroll } from 'linzhe-tools'
+import { Watermark } from 'linzhe-tools'
+import { CarouselItem, Carousel } from 'linzhe-tools'
 const num = ref(100)
 const time = ref(Date.now())
 const numberValue = computed(() => num.value + '')

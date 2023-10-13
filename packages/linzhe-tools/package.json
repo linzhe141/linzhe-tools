@@ -1,17 +1,17 @@
 {
   "name": "linzhe-tools",
   "type": "module",
-  "main": "./dist/cjs/linzheTools/index.js",
-  "module": "./dist/es/linzheTools/index.js",
+  "main": "./dist/cjs/linzhe-tools/index.js",
+  "module": "./dist/es/linzhe-tools/index.js",
   "types": "./dist/types/index.d.ts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publishConfig": {
     "access": "public"
   },
   "exports": {
     ".": {
-      "import": "./dist/es/linzheTools/index.js",
-      "require": "./dist/cjs/linzheTools/index.js"
+      "import": "./dist/es/linzhe-tools/index.js",
+      "require": "./dist/cjs/linzhe-tools/index.js"
     },
     "./style.css": {
       "import": "./dist/style/style.css",
@@ -48,7 +48,7 @@
     "url": "https://github.com/linzhe141/linzhe-tools.git"
   },
   "dependencies": {
-    "@linzhe-tools/components": "0.0.1",
+    "@linzhe-tools/components": "0.0.2",
     "@linzhe-tools/shared": "0.0.1"
   },
   "license": "ISC"

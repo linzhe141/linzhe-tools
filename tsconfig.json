@@ -18,8 +18,8 @@
     "forceConsistentCasingInFileNames": true,
     "paths": {
       "@linzhe-tools/*": ["packages/*"],
-      "linzheTools": ["packages/linzheTools/dist/es/linzheTools"],
-      "linzheTools/style.css": ["packages/linzheTools/dist/style/style.css"]
+      "linzhe-tools": ["packages/linzhe-tools/dist/es/linzhe-tools"],
+      "linzhe-tools/style.css": ["packages/linzhe-tools/dist/style/style.css"]
     }
   },
   "exclude": ["script/*/*"]

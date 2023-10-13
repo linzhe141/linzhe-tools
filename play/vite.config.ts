@@ -5,13 +5,13 @@ import { resolve } from 'path'
 export default defineConfig({
   resolve: {
     alias: {
-      'linzheTools/style.css': resolve(
+      'linzhe-tools/style.css': resolve(
         __dirname,
-        '../packages/linzheTools/dist/style/style.css'
+        '../packages/linzhe-tools/dist/style/style.css'
       ),
-      linzheTools: resolve(
+      'linzhe-tools': resolve(
         __dirname,
-        '../packages/linzheTools/dist/es/linzheTools'
+        '../packages/linzhe-tools/dist/es/linzhe-tools'
       ),
     },
   },

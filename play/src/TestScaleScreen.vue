@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
-import { ScaleScreen } from 'linzheTools'
+import { ScaleScreen } from 'linzhe-tools'
 const scaleScreenRef = ref<InstanceType<typeof ScaleScreen> | null>(null)
 function foo() {
   scaleScreenRef.value?.fullScreen()

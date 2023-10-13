@@ -31,8 +31,8 @@ const props = withDefaults(defineProps<Partial<Props>>(), {
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <!-- 最新版本的screenfull只支持esm -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/screenfull.js/5.2.0/screenfull.js"></script>
-<script src="../packages/linzheTools/dist/umd/index.js"></script>
-<link href="../packages/linzheTools/dist/style/style.css" rel="stylesheet" />
+<script src="../packages/linzhe-tools/dist/umd/index.js"></script>
+<link href="../packages/linzhe-tools/dist/style/style.css" rel="stylesheet" />
 <style>
   * {
     padding: 0;
