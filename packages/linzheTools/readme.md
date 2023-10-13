@@ -1,4 +1,4 @@
-# linzhe_tool
+# linzhe-tool
 
 ## 🚀 SeamlessScroll
 

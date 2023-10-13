@@ -1,4 +1,4 @@
-# @linzhe_tool/carousel
+# @linzhe-tool/carousel
 
 # 🚀 轮播图组件
 

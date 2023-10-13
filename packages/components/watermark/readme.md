@@ -1,4 +1,4 @@
-# @linzhe_tool/watermark
+# @linzhe-tool/watermark
 
 # 🚀 水印组件
 

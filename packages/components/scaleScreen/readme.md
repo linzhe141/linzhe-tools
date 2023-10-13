@@ -1,4 +1,4 @@
-# @linzhe_tool/scale-screen
+# @linzhe-tool/scale-screen
 
 # 🚀 缩放大屏组件
 

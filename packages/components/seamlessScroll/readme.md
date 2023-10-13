@@ -1,4 +1,4 @@
-# @linzhe_tool/seamless-scroll
+# @linzhe-tool/seamless-scroll
 
 # 🚀 无限滚动组件，支持分步滚动
 

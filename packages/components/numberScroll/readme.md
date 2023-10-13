@@ -1,4 +1,4 @@
-# @linzhe_tool/number-scroll
+# @linzhe-tool/number-scroll
 
 # 🚀 数字滚动组件
 
