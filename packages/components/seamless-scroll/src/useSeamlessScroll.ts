@@ -7,14 +7,23 @@ export function useSeamlessScroll(props: Props) {
   const style = computed(() => ({ transform: `translateY(${y.value}px)` }))
   let scrollContentHeight = 0
   const scrollContentRef = ref<HTMLDivElement | null>(null)
+  const canScroll = ref(false)
 
+  let lastExecutionTime = new Date().getTime()
+  const interval = props.interval
   let requestAnimationFrameId = -1
   let setTimoutId = -1
   const startScrollAnimation = () => {
-    y.value -= 1
-    if (y.value <= -scrollContentHeight / 2) {
-      y.value = 0
+    const now = new Date().getTime()
+    const elapssed = now - lastExecutionTime
+    if (elapssed > interval) {
+      lastExecutionTime = now
+      y.value -= 1
+      if (y.value <= -scrollContentHeight) {
+        y.value = 0
+      }
     }
+
     // 分步滚动
     if (stepHeight && stepWaitTimeout) {
       // 当滚动的距离是stepHeight的倍数是就暂停
@@ -40,7 +49,9 @@ export function useSeamlessScroll(props: Props) {
   }
 
   onMounted(() => {
-    scrollContentHeight = scrollContentRef.value?.offsetHeight as number
+    scrollContentHeight = scrollContentRef.value?.offsetHeight!
+    canScroll.value = scrollContentHeight > props.height
+    if (!canScroll.value) return
     if (stepHeight && stepWaitTimeout) {
       setTimeout(startScrollAnimation, stepWaitTimeout)
     } else {
@@ -52,5 +63,6 @@ export function useSeamlessScroll(props: Props) {
     scrollContentRef,
     stopScrollAnimation,
     startScrollAnimation,
+    canScroll,
   }
 }

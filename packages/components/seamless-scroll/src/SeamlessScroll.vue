@@ -4,11 +4,17 @@ import { useSeamlessScroll } from './useSeamlessScroll'
 defineOptions({ name: 'SeamlessScroll' })
 const props = withDefaults(defineProps<Partial<Props>>(), {
   height: 500,
+  interval: 20,
   stepHeight: 0,
   stepWaitTimeout: 0,
 })
-const { style, scrollContentRef, stopScrollAnimation, startScrollAnimation } =
-  useSeamlessScroll(props)
+const {
+  style,
+  scrollContentRef,
+  stopScrollAnimation,
+  startScrollAnimation,
+  canScroll,
+} = useSeamlessScroll(props)
 </script>
 <template>
   <div
@@ -18,11 +24,13 @@ const { style, scrollContentRef, stopScrollAnimation, startScrollAnimation } =
     <div
       ref="scrollContentRef"
       :style="style"
-      @mouseenter="stopScrollAnimation"
-      @mouseleave="startScrollAnimation"
+      @mouseenter="() => canScroll && stopScrollAnimation()"
+      @mouseleave="() => canScroll && startScrollAnimation()"
     >
       <slot></slot>
-      <slot></slot>
+      <div v-if="canScroll">
+        <slot></slot>
+      </div>
     </div>
   </div>
 </template>
