@@ -4,7 +4,7 @@
   "main": "./dist/cjs/linzhe-tools/index.js",
   "module": "./dist/es/linzhe-tools/index.js",
   "types": "./dist/types/index.d.ts",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publishConfig": {
     "access": "public"
   },

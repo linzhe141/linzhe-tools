@@ -1,5 +1,11 @@
 # linzhe-tools
 
+## 0.0.4
+
+### Patch Changes
+
+- docs: 修改 readme 子标题
+
 ## 0.0.3
 
 ### Patch Changes
