@@ -22,5 +22,5 @@
       "linzhe-tools/style.css": ["packages/linzhe-tools/dist/style/style.css"]
     }
   },
-  "exclude": ["script/*/*"]
+  "exclude": ["scripts/*/*"]
 }

@@ -1,15 +1,25 @@
 {
   "name": "@linzhe-tools/shared",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
-  "main": "index.ts",
-  "module": "index.ts",
   "description": "linzhe-tools shared utils",
   "publishConfig": {
     "access": "public"
   },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "publish2npm": "npm version patch && npm publish"
+    "build:src": "rm -rf dist && node ../../scripts/buildShared.js",
+    "build:types": "vue-tsc -p tsconfig.json --declaration --emitDeclarationOnly"
   },
   "repository": {
     "type": "git",

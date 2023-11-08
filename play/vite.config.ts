@@ -11,7 +11,7 @@ export default defineConfig({
       ),
       'linzhe-tools': resolve(
         __dirname,
-        '../packages/linzhe-tools/dist/es/linzhe-tools'
+        '../packages/linzhe-tools/dist/index.js'
       ),
     },
   },

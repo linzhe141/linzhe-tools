@@ -1,5 +1,14 @@
 # linzhe-tools
 
+## 0.0.5
+
+### Patch Changes
+
+- chore: 完全使用 monorepo 方式对每个库进行打包
+- Updated dependencies
+  - @linzhe-tools/components@0.0.4
+  - @linzhe-tools/shared@0.0.2
+
 ## 0.0.4
 
 ### Patch Changes

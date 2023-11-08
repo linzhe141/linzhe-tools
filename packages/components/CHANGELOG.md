@@ -1,5 +1,11 @@
 # @linzhe-tools/components
 
+## 0.0.4
+
+### Patch Changes
+
+- chore: 完全使用 monorepo 方式对每个库进行打包
+
 ## 0.0.3
 
 ### Patch Changes

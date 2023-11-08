@@ -18,30 +18,7 @@ const props = withDefaults(defineProps<Partial<Props>>(), {
 })
 ```
 
-## 📝 使用方法
-
-- 浏览器使用
-
-```html
-<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-<script src="../packages/linzhe-tools/dist/umd/index.js"></script>
-<link href="../packages/linzhe-tools/dist/style/style.css" rel="stylesheet" />
-<div id="app">
-  <div style="height: 500px">
-    <watermark text="测试水印" fill-style="rgba(255,0,0,0.99)">
-      fadfdasfdas
-    </watermark>
-  </div>
-</div>
-<script>
-  const { Watermark } = linzheTools
-  const app = Vue.createApp()
-  app.component('Watermark', Watermark)
-  app.mount('#app')
-</script>
-```
-
-- 构建工具使用
+### 📝 使用方法
 
 ```properties
 npm i -S linzhe-tools

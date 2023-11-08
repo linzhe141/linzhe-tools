@@ -21,52 +21,7 @@ const props = withDefaults(defineProps<Partial<Props>>(), {
 })
 ```
 
-## 📝 使用方法
-
-- 浏览器使用
-
-```html
-<script src="../packages/linzhe-tools/dist/linzhe-tools.umd.js"></script>
-<link href="../packages/linzhe-tools/dist/style/style.css" rel="stylesheet" />
-<div id="app">
-  <seamless-scroll :height="108" style="background-color: #ccc">
-    <div style="line-height: 22px">11111111111111111111</div>
-    <div style="line-height: 22px">22222222222222222222</div>
-    <div style="line-height: 22px">33333333333333333333</div>
-    <div style="line-height: 22px">44444444444444444444</div>
-    <div style="line-height: 22px">55555555555555555555</div>
-    <div style="line-height: 22px">66666666666666666666</div>
-  </seamless-scroll>
-  <p>======</p>
-  <seamless-scroll
-    :height="108"
-    :step-height="22"
-    :step-wait-timeout="2000"
-    style="background-color: #ccc"
-  >
-    <div style="line-height: 22px">11111111111111111111</div>
-    <div style="line-height: 22px">22222222222222222222</div>
-    <div style="line-height: 22px">33333333333333333333</div>
-    <div style="line-height: 22px">44444444444444444444</div>
-    <div style="line-height: 22px">55555555555555555555</div>
-    <div style="line-height: 22px">66666666666666666666</div>
-  </seamless-scroll>
-</div>
-<script>
-  const { SeamlessScroll } = linzheTools
-  const app = Vue.createApp({
-    data() {
-      return {
-        message: 'Hello Vue!',
-      }
-    },
-  })
-  app.component('SeamlessScroll', SeamlessScroll)
-  app.mount('#app')
-</script>
-```
-
-- 构建工具使用
+### 📝 使用方法
 
 ```properties
 npm i -S linzhe-tools

@@ -1,21 +1,19 @@
 {
   "name": "linzhe-tools",
   "type": "module",
-  "main": "./dist/cjs/linzhe-tools/index.js",
-  "module": "./dist/es/linzhe-tools/index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
   "types": "./dist/types/index.d.ts",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "publishConfig": {
     "access": "public"
   },
   "exports": {
     ".": {
-      "import": "./dist/es/linzhe-tools/index.js",
-      "require": "./dist/cjs/linzhe-tools/index.js"
+      "import": "./dist/index.js"
     },
     "./style.css": {
-      "import": "./dist/style/style.css",
-      "require": "./dist/style/style.css"
+      "import": "./dist/style/style.css"
     }
   },
   "files": [
@@ -23,9 +21,8 @@
   ],
   "description": "基于vue3的UI工具库",
   "scripts": {
-    "publish2npm": "npm version patch && npm publish",
-    "build:types": "vue-tsc --declaration --emitDeclarationOnly",
-    "build:src": "rm -rf dist && node script/build.js"
+    "build:src": "rm -rf dist && node ../../scripts/buildLinzheTools.js",
+    "build:types": "vue-tsc -p tsconfig.json --declaration --emitDeclarationOnly"
   },
   "keywords": [
     "vue3",
@@ -48,8 +45,8 @@
     "url": "https://github.com/linzhe141/linzhe-tools.git"
   },
   "dependencies": {
-    "@linzhe-tools/components": "0.0.3",
-    "@linzhe-tools/shared": "0.0.1"
+    "@linzhe-tools/components": "0.0.4",
+    "@linzhe-tools/shared": "0.0.2"
   },
   "license": "ISC"
 }
