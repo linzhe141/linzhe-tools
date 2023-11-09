@@ -4,16 +4,7 @@ import { resolve } from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
   resolve: {
-    alias: {
-      'linzhe-tools/style.css': resolve(
-        __dirname,
-        '../packages/linzhe-tools/dist/style/style.css'
-      ),
-      'linzhe-tools': resolve(
-        __dirname,
-        '../packages/linzhe-tools/dist/index.js'
-      ),
-    },
+    // alias: {},
   },
   plugins: [vue()],
 })
