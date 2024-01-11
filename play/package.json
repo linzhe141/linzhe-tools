@@ -11,6 +11,7 @@
     "vue": "^3.2.45"
   },
   "dependencies": {
-    "@types/node": "^20.4.9"
+    "@types/node": "^20.4.9",
+    "dayjs": "^1.11.10"
   }
 }

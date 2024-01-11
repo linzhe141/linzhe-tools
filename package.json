@@ -10,10 +10,7 @@
   },
   "scripts": {
     "dev": "pnpm run -C play dev",
-    "build": "pnpm build:components && pnpm build:shared && pnpm build:linzhe-tools",
-    "build:components": "pnpm run -C packages/components build:src",
-    "build:shared": "pnpm run -C packages/shared build:src",
-    "build:linzhe-tools": "pnpm run -C packages/linzhe-tools build:src",
+    "build": "pnpm --filter ./packages/** run build:src",
     "changeset": "changeset",
     "vp": "changeset version",
     "release": "changeset publish"
@@ -41,7 +38,6 @@
     "screenfull": "^6.0.2",
     "typescript": "^4.9.5",
     "vite": "^4.4.11",
-    "vite-plugin-dts": "^3.6.0",
     "vue": "^3.3.4",
     "vue-tsc": "^1.8.22"
   }
