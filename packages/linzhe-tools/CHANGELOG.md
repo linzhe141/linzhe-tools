@@ -1,5 +1,14 @@
 # linzhe-tools
 
+## 0.0.6
+
+### Patch Changes
+
+- chore: package.json 新增 exports "." types 入口
+- Updated dependencies
+  - @linzhe-tools/components@0.0.5
+  - @linzhe-tools/shared@0.0.3
+
 ## 0.0.5
 
 ### Patch Changes

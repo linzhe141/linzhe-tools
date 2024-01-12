@@ -1,5 +1,11 @@
 # @linzhe-tools/shared
 
+## 0.0.3
+
+### Patch Changes
+
+- chore: package.json 新增 exports "." types 入口
+
 ## 0.0.2
 
 ### Patch Changes

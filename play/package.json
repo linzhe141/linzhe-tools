@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@types/node": "^20.4.9",
+    "@vue/repl": "^3.3.0",
     "dayjs": "^1.11.10"
   }
 }

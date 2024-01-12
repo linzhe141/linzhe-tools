@@ -70,10 +70,10 @@ importers:
   packages/linzhe-tools:
     dependencies:
       '@linzhe-tools/components':
-        specifier: 0.0.4
+        specifier: 0.0.5
         version: link:../components
       '@linzhe-tools/shared':
-        specifier: 0.0.2
+        specifier: 0.0.3
         version: link:../shared
 
   packages/shared: {}
@@ -83,6 +83,9 @@ importers:
       '@types/node':
         specifier: ^20.4.9
         version: 20.10.8
+      '@vue/repl':
+        specifier: ^3.3.0
+        version: 3.3.0
       dayjs:
         specifier: ^1.11.10
         version: 1.11.10
@@ -674,6 +677,10 @@ packages:
     resolution: {integrity: sha512-UJYMQ3S2rqIGw9IvKomD4Xw2uS5VlcKEEmwcfboGOdrI79oqebxnCgTvXWLMClvg3M5SF0Cyn+9eDQoyGMLu9Q==}
     dependencies:
       '@vue/shared': 3.4.8
+
+  /@vue/repl@3.3.0:
+    resolution: {integrity: sha512-A9tdO7obt/kpFUHdgGoRnan6bZjfz/WAJ5+DpPkvgNEc960W+bJraURv8MUVtH2Id/byWotKbUve2jTakiccSw==}
+    dev: false
 
   /@vue/runtime-core@3.4.8:
     resolution: {integrity: sha512-sMRXOy89KnwY6fWG5epgPOsCWzpo/64FrA0QkjIeNeGnoA2YyZ6bBUxpFUyqhJ8VbrDhXEFH+6LHMOYrpzX/ZQ==}
