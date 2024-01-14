@@ -31,7 +31,10 @@ export default defineConfig({
         text: '基础组件',
         items: [
           { text: 'Carousel', link: '/example/Carousel/readme' },
-          // { text: 'Runtime API Examples', link: '/api-examples' },
+          { text: 'NumberScroll', link: '/example/NumberScroll/readme' },
+          { text: 'ScaleScreen', link: '/example/ScaleScreen/readme' },
+          { text: 'SeamlessScroll', link: '/example/SeamlessScroll/readme' },
+          { text: 'Watermark', link: '/example/Watermark/readme' },
         ],
       },
     ],

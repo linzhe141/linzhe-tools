@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onMounted, ref } from 'vue'
+import { computed } from 'vue'
 const props = defineProps<{ exampleName: string }>()
 const examplesRaw = import.meta.glob('../example/**/*.vue', {
   as: 'raw',
@@ -21,8 +21,7 @@ const sourceHash = computed(() => {
   }
   return btoa(unescape(encodeURIComponent(JSON.stringify(originCode))))
 })
-// TODO using env
-const playgroundUrl = 'http://localhost:5174'
+const playgroundUrl = import.meta.env.VITE_PLAYGROUND
 function toPlayground() {
   window.open(`${playgroundUrl}/#${sourceHash.value}`, '_blank')
 }

@@ -15,6 +15,7 @@ store.setVueVersion('3.4.8')
 store.setImportMap({
   imports: {
     screenfull: 'https://cdn.jsdelivr.net/npm/screenfull@6.0.2/+esm',
+    dayjs: 'https://cdn.jsdelivr.net/npm/screenfull@6.0.2/+esm',
     'linzhe-tools': './linzhe-tools/index.js',
     '@linzhe-tools/components': './linzhe-tools/components/index.js',
     '@linzhe-tools/shared': './linzhe-tools/shared/index.js',
