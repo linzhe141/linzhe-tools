@@ -18,7 +18,6 @@ function toPlayground() {
 </script>
 
 <template>
-  <button @click="toPlayground">foo</button>
   <Playground />
 </template>
 

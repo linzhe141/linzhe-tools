@@ -23,3 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 play/public/linzhe-tools
+docs/.vitepress/dist
+docs/.vitepress/cache

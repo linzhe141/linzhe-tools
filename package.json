@@ -5,11 +5,13 @@
   "workspaces": {
     "packages": [
       "packages/*",
-      "play"
+      "play",
+      "docs"
     ]
   },
   "scripts": {
     "dev": "pnpm run -C play dev",
+    "docs": "pnpm run -C docs docs:dev",
     "build": "pnpm --filter ./packages/** run build:src",
     "changeset": "changeset",
     "vp": "changeset version",
@@ -28,6 +30,7 @@
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
+    "@types/node": "^20.4.9",
     "@vitejs/plugin-vue": "^4.4.0",
     "chalk": "^5.3.0",
     "dayjs": "^1.11.10",
