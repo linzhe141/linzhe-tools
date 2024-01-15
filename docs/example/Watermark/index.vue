@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Watermark } from '@linzhe-tools/components'
+import { Watermark } from 'linzhe-tools'
 </script>
 <template>
   <div style="height: 500px">
