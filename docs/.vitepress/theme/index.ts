@@ -1,6 +1,5 @@
 import DefaultTheme from 'vitepress/theme'
 import Demo from '../../components/Demo.vue'
-import 'linzhe-tools/style.css'
 const globalComponents = [{ name: 'Demo', component: Demo }]
 // @ts-ignore
 const exampleComponents = import.meta.glob('../../example/**/*.vue', {
