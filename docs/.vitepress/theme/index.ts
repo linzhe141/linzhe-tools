@@ -1,6 +1,6 @@
 import DefaultTheme from 'vitepress/theme'
-import Demo from '../../components/Demo.vue'
-const globalComponents = [{ name: 'Demo', component: Demo }]
+import DemoClientOnly from '../../components/DemoClientOnly.vue'
+const globalComponents = [{ name: 'DemoClientOnly', component: DemoClientOnly }]
 // @ts-ignore
 const exampleComponents = import.meta.glob('../../example/**/*.vue', {
   eager: true,

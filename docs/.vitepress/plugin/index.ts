@@ -31,17 +31,17 @@ export const mdPlugin = (md: MarkdownIt) => {
             'utf-8'
           )
         }
+        let playgroundVueComponentPath = sourceFile
+        if (description.includes('playgroundVueComponentPath=')) {
+          playgroundVueComponentPath = description.split('=')[1]
+        }
         if (!source) throw new Error(`Incorrect source file: ${sourceFile}`)
-        // return `<Demo :demos="demos" source="${encodeURIComponent(
-        //   highlight(source, 'vue')
-        // )}" path="${sourceFile}" raw-source="${encodeURIComponent(
-        //   source
-        // )}" description="${encodeURIComponent(localMd.render(description))}">`
-        return `<Demo source="${encodeURIComponent(
+
+        return `<DemoClientOnly source="${encodeURIComponent(
           source
-        )}" example-path="${sourceFile}" >`
+        )}" example-path="${playgroundVueComponentPath}" >`
       } else {
-        return '</Demo>'
+        return '</DemoClientOnly>'
       }
     },
   })

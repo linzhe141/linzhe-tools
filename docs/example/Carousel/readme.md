@@ -21,6 +21,6 @@ const props = withDefaults(defineProps<Partial<Props>>(), {
 
 ## Demo
 
-:::demo
+:::demo playgroundVueComponentPath=Carousel/index
 Carousel/index
 :::
