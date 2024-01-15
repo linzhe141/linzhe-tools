@@ -64,7 +64,7 @@ importers:
   docs:
     dependencies:
       linzhe-tools:
-        specifier: workspace:*
+        specifier: 0.0.6
         version: link:../packages/linzhe-tools
       shiki:
         specifier: ^0.14.7
