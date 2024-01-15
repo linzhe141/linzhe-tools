@@ -67,7 +67,7 @@ importers:
         specifier: ^3.3.0
         version: 3.3.0
       linzhe-tools:
-        specifier: 0.0.6
+        specifier: 0.0.7
         version: link:../packages/linzhe-tools
       shiki:
         specifier: ^0.14.7
@@ -95,7 +95,7 @@ importers:
   packages/linzhe-tools:
     dependencies:
       '@linzhe-tools/components':
-        specifier: 0.0.5
+        specifier: 0.0.6
         version: link:../components
       '@linzhe-tools/shared':
         specifier: 0.0.3
