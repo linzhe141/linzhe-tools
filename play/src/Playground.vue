@@ -15,16 +15,16 @@ store.setVueVersion('3.4.8')
 store.setImportMap({
   imports: {
     screenfull: 'https://cdn.jsdelivr.net/npm/screenfull@6.0.2/+esm',
-    dayjs: 'https://cdn.jsdelivr.net/npm/screenfull@6.0.2/+esm',
-    'linzhe-tools': './linzhe-tools/index.js',
-    '@linzhe-tools/components': './linzhe-tools/components/index.js',
-    '@linzhe-tools/shared': './linzhe-tools/shared/index.js',
-    // 'linzhe-tools':
-    //   'https://cdn.jsdelivr.net/npm/linzhe-tools@0.0.6/dist/index.min.js',
-    // '@linzhe-tools/components':
-    //   'https://cdn.jsdelivr.net/npm/@linzhe-tools/components@0.0.5/dist/index.min.js',
-    // '@linzhe-tools/shared':
-    //   'https://cdn.jsdelivr.net/npm/@linzhe-tools/shared@0.0.3/dist/index.min.js',
+    dayjs: 'https://cdn.jsdelivr.net/npm/dayjs@1.11.10/+esm',
+    // 'linzhe-tools': './linzhe-tools/index.js',
+    // '@linzhe-tools/components': './linzhe-tools/components/index.js',
+    // '@linzhe-tools/shared': './linzhe-tools/shared/index.js',
+    'linzhe-tools':
+      'https://cdn.jsdelivr.net/npm/linzhe-tools@0.0.6/dist/index.min.js',
+    '@linzhe-tools/components':
+      'https://cdn.jsdelivr.net/npm/@linzhe-tools/components@0.0.5/dist/index.min.js',
+    '@linzhe-tools/shared':
+      'https://cdn.jsdelivr.net/npm/@linzhe-tools/shared@0.0.3/dist/index.min.js',
   },
 })
 // previewOptions.headHTML = `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/linzhe-tools@0.0.5/dist/style/style.css">`
