@@ -17,7 +17,7 @@
     "vitepress": "1.0.0-rc.36"
   },
   "dependencies": {
-    "linzhe-tools": "workspace:*",
+    "linzhe-tools": "0.0.6",
     "shiki": "^0.14.7"
   }
 }
