@@ -1,9 +1,6 @@
 # linzhe-tool
 
-### 🚀 document
-
-- [npm](https://www.npmjs.com/package/linzhe-tools)
-- [readme](https://github.com/linzhe141/linzhe-tools/blob/main/readme.md)
+### 📝 [document](https://linzhe-tools-docs.vercel.app/)
 
 ### tips
 
@@ -29,4 +26,4 @@ TODO
   通过在 play 设置`alias`解决，这样 play 中的代码就是源码了，而非打包后的产物
 
 - [x] docs
-- [ ] playground
+- [x] playground

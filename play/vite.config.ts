@@ -6,14 +6,6 @@ export default defineConfig({
   resolve: {
     alias: [
       {
-        find: 'linzhe-tools/style.css',
-        replacement: join(
-          __dirname,
-          '..',
-          'packages/linzhe-tools/dist/style/style.css'
-        ),
-      },
-      {
         find: 'linzhe-tools',
         replacement: join(__dirname, '..', 'packages/linzhe-tools/index.ts'),
       },
