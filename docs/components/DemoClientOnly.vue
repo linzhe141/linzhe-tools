@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import Demo from './Demo.vue'
 defineProps<{
-  source: string
   examplePath: string
+  sourceCodeHtml: string
 }>()
 </script>
 
 <template>
-  <ClientOnly
-    ><Demo :source="source" :example-path="examplePath" />
+  <ClientOnly>
+    <Demo :example-path="examplePath" :source-code-html="sourceCodeHtml" />
   </ClientOnly>
 </template>

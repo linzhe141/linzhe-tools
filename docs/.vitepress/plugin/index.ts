@@ -18,7 +18,7 @@ export const mdPlugin = (md: MarkdownIt) => {
       return !!params.trim().match(/^demo\s*(.*)$/)
     },
 
-    render(tokens, idx) {
+    render(tokens, idx, options, env, self) {
       const m = tokens[idx].info.trim().match(/^demo\s*(.*)$/)
       if (tokens[idx].nesting === 1 /* means the tag is opening */) {
         const description = m && m.length > 1 ? m[1] : ''
@@ -31,15 +31,25 @@ export const mdPlugin = (md: MarkdownIt) => {
             'utf-8'
           )
         }
+        const sourceCodeHtml = self.rules.fence?.(
+          // 将源码拼接成 markdown 的代码块形式
+          // 调用 md.parse() 将代码块转换成对应的 Token
+          // 调用代码块渲染的 Renderer —— renderer.rules.fence()，生成源码展示 Html
+          md.parse(`\`\`\`vue\n${source}\n\`\`\``, env),
+          0,
+          options,
+          env,
+          self
+        )
         let playgroundVueComponentPath = sourceFile
         if (description.includes('playgroundVueComponentPath=')) {
           playgroundVueComponentPath = description.split('=')[1]
         }
         if (!source) throw new Error(`Incorrect source file: ${sourceFile}`)
 
-        return `<DemoClientOnly source="${encodeURIComponent(
-          source
-        )}" example-path="${playgroundVueComponentPath}" >`
+        return `<DemoClientOnly 
+          example-path="${playgroundVueComponentPath}" 
+          source-code-html="${encodeURIComponent(sourceCodeHtml)}" >`
       } else {
         return '</DemoClientOnly>'
       }
