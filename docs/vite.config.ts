@@ -14,4 +14,8 @@ export default defineConfig({
       },
     ],
   },
+  // https://github.com/vuejs/vitepress/issues/1465
+  ssr: {
+    noExternal: ['@vue/repl'],
+  },
 })

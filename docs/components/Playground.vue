@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import { reactive, watchEffect } from 'vue'
+import { ref, reactive, watchEffect, onMounted } from 'vue'
 import { Repl, ReplStore } from '@vue/repl'
-import Monaco from '@vue/repl/monaco-editor'
 
 // repl组件需要store管理状态
 const store = new ReplStore({
@@ -28,10 +27,20 @@ store.setImportMap({
   },
 })
 previewOptions.headHTML = `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/linzhe-tools@latest/dist/style/style.css">`
+
+let Monaco: any
+const isMounted = ref(false)
+// https://vitepress.dev/guide/ssr-compat#libraries-that-access-browser-api-on-import
+onMounted(() => {
+  import('@vue/repl/monaco-editor').then((res) => {
+    Monaco = res.default
+    isMounted.value = true
+  })
+})
 </script>
 
 <template>
-  <div>
+  <div v-if="isMounted">
     <Repl
       :store="store"
       :editor="Monaco"

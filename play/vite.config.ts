@@ -24,9 +24,6 @@ export default defineConfig({
     ],
   },
   plugins: [vue()],
-  optimizeDeps: {
-    exclude: ['@vue/repl'],
-  },
   server: {
     port: 4521,
   },
