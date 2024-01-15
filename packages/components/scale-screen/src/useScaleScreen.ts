@@ -35,9 +35,9 @@ export function useScaleScreen(props: Props) {
     let xk = props.width / realWidth
     let yk = props.height / realHeight
 
-    // 窗口的宽高
-    const w = window.innerWidth
-    const h = window.innerHeight
+    // 大屏状态下使用窗口的宽高，否则使用用户设置的缩率图的宽高
+    const w = isFullscreen.value ? window.innerWidth : props.thumbnailWidth
+    const h = isFullscreen.value ? window.innerHeight : props.thumbnailHeight
     let resizeWidth = 0
     let resizeHeight = 0
     if (h / w > props.height / props.width) {

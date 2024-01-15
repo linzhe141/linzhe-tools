@@ -1,7 +1,7 @@
 {
   "name": "docs",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "linzhe-tools docs",
   "scripts": {
     "docs:dev": "vitepress dev",
@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@vue/repl": "^3.3.0",
-    "linzhe-tools": "0.0.6",
+    "linzhe-tools": "0.0.7",
     "shiki": "^0.14.7"
   }
 }

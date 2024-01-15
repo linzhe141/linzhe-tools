@@ -1,5 +1,11 @@
 # @linzhe-tools/components
 
+## 0.0.6
+
+### Patch Changes
+
+- feat: 屏幕缩放组件新增缩率图展示功能
+
 ## 0.0.5
 
 ### Patch Changes

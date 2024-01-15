@@ -5,6 +5,8 @@ defineOptions({ name: 'ScaleScreen' })
 const props = withDefaults(defineProps<Partial<Props>>(), {
   height: 1080,
   width: 1920,
+  thumbnailHeight: 540,
+  thumbnailWidth: 540,
 })
 const {
   wrapper,

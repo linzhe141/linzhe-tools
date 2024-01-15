@@ -1,5 +1,12 @@
 # linzhe-tools
 
+## 0.0.7
+
+### Patch Changes
+
+- Updated dependencies
+  - @linzhe-tools/components@0.0.6
+
 ## 0.0.6
 
 ### Patch Changes
