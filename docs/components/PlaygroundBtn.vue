@@ -21,9 +21,9 @@ const sourceHash = computed(() => {
   }
   return btoa(unescape(encodeURIComponent(JSON.stringify(originCode))))
 })
-const playgroundUrl = import.meta.env.VITE_PLAYGROUND
+const playgroundUrl = window.location.origin + '/playground.html'
 function toPlayground() {
-  window.open(`${playgroundUrl}/#${sourceHash.value}`, '_blank')
+  window.open(`${playgroundUrl}#${sourceHash.value}`, '_blank')
 }
 </script>
 

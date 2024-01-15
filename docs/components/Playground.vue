@@ -20,15 +20,14 @@ store.setImportMap({
     // '@linzhe-tools/components': './linzhe-tools/components/index.js',
     // '@linzhe-tools/shared': './linzhe-tools/shared/index.js',
     'linzhe-tools':
-      'https://cdn.jsdelivr.net/npm/linzhe-tools@0.0.6/dist/index.min.js',
+      'https://cdn.jsdelivr.net/npm/linzhe-tools@latest/dist/index.min.js',
     '@linzhe-tools/components':
-      'https://cdn.jsdelivr.net/npm/@linzhe-tools/components@0.0.5/dist/index.min.js',
+      'https://cdn.jsdelivr.net/npm/@linzhe-tools/components@latest/dist/index.min.js',
     '@linzhe-tools/shared':
-      'https://cdn.jsdelivr.net/npm/@linzhe-tools/shared@0.0.3/dist/index.min.js',
+      'https://cdn.jsdelivr.net/npm/@linzhe-tools/shared@latest/dist/index.min.js',
   },
 })
-// previewOptions.headHTML = `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/linzhe-tools@0.0.5/dist/style/style.css">`
-previewOptions.headHTML = `<link rel="stylesheet" href="./linzhe-tools/style/style.css">`
+previewOptions.headHTML = `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/linzhe-tools@latest/dist/style/style.css">`
 </script>
 
 <template>

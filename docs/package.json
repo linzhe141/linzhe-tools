@@ -17,6 +17,7 @@
     "vitepress": "1.0.0-rc.36"
   },
   "dependencies": {
+    "@vue/repl": "^3.3.0",
     "linzhe-tools": "0.0.6",
     "shiki": "^0.14.7"
   }

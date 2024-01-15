@@ -8,7 +8,7 @@ const props = defineProps<{
 }>()
 
 const codeHtml = ref('')
-setCDN('/node_modules/shiki/')
+setCDN('https://cdn.jsdelivr.net/npm/shiki')
 getHighlighter({
   themes: ['github-light', 'github-dark'],
   langs: ['vue'],
