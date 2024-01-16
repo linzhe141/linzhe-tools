@@ -1,5 +1,11 @@
 # linzhe-tools
 
+## 0.0.9
+
+### Patch Changes
+
+- chore: 补充 package.json 文件
+
 ## 0.0.8
 
 ### Patch Changes

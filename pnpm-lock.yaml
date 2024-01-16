@@ -7,16 +7,6 @@ settings:
 importers:
 
   .:
-    dependencies:
-      '@linzhe-tools/components':
-        specifier: workspace:*
-        version: link:packages/components
-      '@linzhe-tools/shared':
-        specifier: workspace:*
-        version: link:packages/shared
-      linzhe-tools:
-        specifier: workspace:*
-        version: link:packages/linzhe-tools
     devDependencies:
       '@changesets/cli':
         specifier: ^2.26.2
@@ -66,9 +56,6 @@ importers:
       '@vue/repl':
         specifier: ^3.3.0
         version: 3.3.0
-      linzhe-tools:
-        specifier: 0.0.7
-        version: link:../packages/linzhe-tools
     devDependencies:
       markdown-it:
         specifier: ^14.0.0
@@ -82,6 +69,9 @@ importers:
 
   packages/components:
     dependencies:
+      '@linzhe-tools/shared':
+        specifier: workspace:*
+        version: link:../shared
       screenfull:
         specifier: ^6.0.0
         version: 6.0.2
@@ -92,10 +82,10 @@ importers:
   packages/linzhe-tools:
     dependencies:
       '@linzhe-tools/components':
-        specifier: 0.0.6
+        specifier: workspace:*
         version: link:../components
       '@linzhe-tools/shared':
-        specifier: 0.0.3
+        specifier: workspace:^
         version: link:../shared
 
   packages/shared: {}

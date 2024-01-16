@@ -4,7 +4,7 @@
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/types/index.d.ts",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "publishConfig": {
     "access": "public"
   },
@@ -46,7 +46,8 @@
     "url": "https://github.com/linzhe141/linzhe-tools.git"
   },
   "dependencies": {
-    "@linzhe-tools/components": "workspace:*"
+    "@linzhe-tools/components": "workspace:*",
+    "@linzhe-tools/shared": "workspace:*"
   },
   "license": "ISC"
 }
