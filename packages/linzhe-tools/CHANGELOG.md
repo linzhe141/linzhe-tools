@@ -1,5 +1,13 @@
 # linzhe-tools
 
+## 0.0.8
+
+### Patch Changes
+
+- refactor: 重构 monorepo 架构
+- Updated dependencies
+  - @linzhe-tools/components@0.0.7
+
 ## 0.0.7
 
 ### Patch Changes

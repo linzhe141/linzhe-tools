@@ -1,6 +1,6 @@
 {
   "name": "@linzhe-tools/components",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -33,6 +33,7 @@
     "vue": "^3.3.4"
   },
   "dependencies": {
+    "@linzhe-tools/shared": "workspace:*",
     "screenfull": "^6.0.0"
   },
   "author": "linzhe141@qq.com",

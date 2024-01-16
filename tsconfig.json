@@ -16,8 +16,12 @@
     "rootDir": ".",
     "baseUrl": ".",
     "forceConsistentCasingInFileNames": true,
+    // 以下配置，主要是开发环境使用，不影响打包
     "paths": {
-      "@linzhe-tools/*": ["packages/*"]
+      // monorepo下，ts的编辑器配置，如果没有以下配置只是编辑器会报错，看着就不爽
+      // 不加index.ts会走package.json，则会使用dist目录的打包后的代码，开发环境直接使用源码
+      "@linzhe-tools/*": ["packages/*/index.ts"],
+      "linzhe-tools": ["packages/linzhe-tools/index.ts"]
     }
   },
   "exclude": ["scripts/*/*"]

@@ -2,13 +2,6 @@
   "private": "true",
   "description": "",
   "type": "module",
-  "workspaces": {
-    "packages": [
-      "packages/*",
-      "play",
-      "docs"
-    ]
-  },
   "scripts": {
     "dev": "pnpm run -C play dev",
     "docs": "pnpm run -C docs docs:dev",
@@ -22,11 +15,6 @@
   "peerDependencies": {
     "screenfull": "^6.0.2",
     "vue": "^3.2.36"
-  },
-  "dependencies": {
-    "@linzhe-tools/components": "workspace:*",
-    "@linzhe-tools/shared": "workspace:*",
-    "linzhe-tools": "workspace:*"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.2",

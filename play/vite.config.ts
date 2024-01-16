@@ -4,6 +4,7 @@ import { join } from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
   resolve: {
+    // 直接使用源码
     alias: [
       {
         find: 'linzhe-tools',
