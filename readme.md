@@ -1,5 +1,19 @@
 # linzhe-tools
 
+[npm-version-src]: https://img.shields.io/npm/v/linzhe-tools?style=flat&colorA=080f12&colorB=1fa669
+[npm-version-href]: https://npmjs.com/package/linzhe-tools
+[npm-downloads-src]: https://img.shields.io/npm/dm/linzhe-tools?style=flat&colorA=080f12&colorB=1fa669
+[npm-downloads-href]: https://npmjs.com/package/linzhe-tools
+[bundle-src]: https://img.shields.io/bundlephobia/minzip/linzhe-tools?style=flat&colorA=080f12&colorB=1fa669&label=minzip
+[bundle-href]: https://bundlephobia.com/result?p=linzhe-tools
+[jsdocs-src]: https://img.shields.io/badge/jsdocs-reference-080f12?style=flat&colorA=080f12&colorB=1fa669
+[jsdocs-href]: https://www.jsdocs.io/package/linzhe-tools
+
+[![npm version][npm-version-src]][npm-version-href]
+[![npm downloads][npm-downloads-src]][npm-downloads-href]
+[![bundle][bundle-src]][bundle-href]
+[![JSDocs][jsdocs-src]][jsdocs-href]
+
 🚀 基于 vue3 并使用 monorepo 实现一些简单的组件
 
 ### 📝 [document](https://linzhe-tools-docs.vercel.app/)
@@ -26,7 +40,7 @@
 
 5. `pnpm release`
 
-   发布到 npm 上，并创建几个（具体就是几个修改的对应要发布到 npm 上的包）git tag，所以`在 release 前一定要先 commit`，否则 tag 就会和 package 的 version 对不上，如果只是修改了 play 和 docs 包，则可跳过改命令
+   发布到 npm 上，并创建几个（具体就是几个修改的对应要发布到 npm 上的包）git tag，所以`在 release 前一定要先 commit`，否则 tag 就会和 package 的 version 对不上，如果只是修改了 play 和 docs 包，则可跳过改命令，[此外在发布时 workspace:\*之类的 会进行自动转换](https://pnpm.io/workspaces#publishing-workspace-packages)
 
 ### 🚧 TODO
 
