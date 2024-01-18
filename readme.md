@@ -1,3 +1,5 @@
+<img src="https://raw.githubusercontent.com/linzhe141/linzhe-tools/33f7e0189ba0deccc04727705fa6ec70ce4ccce9/docs/public/logo.svg" alt="linzhe-tools Logo" >
+
 # linzhe-tools
 
 [npm-version-src]: https://img.shields.io/npm/v/linzhe-tools?style=flat&colorA=080f12&colorB=1fa669
