@@ -18,6 +18,9 @@
 
 🚀 基于 vue3 并使用 monorepo 实现一些简单的组件
 
+> [!IMPORTANT]
+> 该库旨在用于学习 monorepo，并且是一项正在进行的工作。 预计未来版本中会有重大变化。
+
 ### 📝 [document](https://linzhe-tools-docs.vercel.app/)
 
 ### 📢 发布流程
