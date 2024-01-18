@@ -64,3 +64,7 @@
 - [ ] eslint、git hooks 等
 
   个人项目暂不考虑，目前只是简单的使用了 prettier 并结合 vscode 的 prettier 插件，文件自动保存进行 format
+
+- [ ] GitHub Actions
+
+  通过 GitHub Actions，进行自动化发布
