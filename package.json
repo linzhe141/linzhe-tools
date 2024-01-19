@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "pnpm run -C play dev",
     "docs": "pnpm run -C docs docs:dev",
-    "build": "pnpm --filter ./packages/** run build:src",
+    "build": "rm -rf dist && pnpm --filter ./packages/** run build:src && pnpm run build:Dist",
+    "build:Dist": "vue-tsc -p tsconfig.json --declaration --emitDeclarationOnly && npx tsx scripts/buildDist.ts",
     "changeset": "changeset",
     "vp": "changeset version",
     "release": "changeset publish"
@@ -27,6 +28,7 @@
     "nanospinner": "^1.1.0",
     "sass": "^1.69.3",
     "screenfull": "^6.0.2",
+    "tsx": "^4.7.0",
     "typescript": "^4.9.5",
     "vite": "^4.4.11",
     "vue": "^3.3.4",

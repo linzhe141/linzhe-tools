@@ -22,8 +22,7 @@
     "dist"
   ],
   "scripts": {
-    "build:src": "rm -rf dist && node ../../scripts/buildComponents.js",
-    "build:types": "vue-tsc -p tsconfig.json --declaration --emitDeclarationOnly"
+    "build:src": "rm -rf dist && vite build"
   },
   "repository": {
     "type": "git",
