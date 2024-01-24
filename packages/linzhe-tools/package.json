@@ -4,7 +4,7 @@
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/types/index.d.ts",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "publishConfig": {
     "access": "public"
   },
@@ -17,6 +17,7 @@
       "import": "./dist/style/style.css"
     }
   },
+  "homepage": "https://linzhe-tools-docs.vercel.app",
   "files": [
     "dist"
   ],

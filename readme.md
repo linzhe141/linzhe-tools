@@ -23,7 +23,7 @@
 
 ### 📝 [document](https://linzhe-tools-docs.vercel.app/)
 
-### 📢 发布流程
+### 📢 手动发布流程
 
 本项目使用[`changeset`](https://github.com/changesets/changesets)进行管理变更集和 `npm` 的发布
 
