@@ -65,6 +65,14 @@
 
   个人项目暂不考虑，目前只是简单的使用了 prettier 并结合 vscode 的 prettier 插件，文件自动保存进行 format
 
-- [ ] GitHub Actions
+- [x] GitHub Actions publish to npm
 
-  通过 GitHub Actions，进行自动化发布
+  通过 [GitHub Actions](https://github.com/linzhe141/linzhe-tools/blob/main/.github/workflows/release.yml)，进行自动化发布（目前只能说能用，待优化整个流程，比如有一个单独的开发分支，要不触发得很频繁）
+
+  具体流程
+
+  - `pnpm changeset` (详情见手动发布流程)
+
+  - `pnpm vp` (详情见手动发布流程)
+
+  - `git push orgin main`：只有 push 到 main 分支才会触发 github action
