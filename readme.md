@@ -47,6 +47,8 @@
 
    发布到 npm 上，并创建几个（具体就是几个修改的对应要发布到 npm 上的包）git tag，所以`在 release 前一定要先 commit`，否则 tag 就会和 package 的 version 对不上，如果只是修改了 play 和 docs 包，则可跳过改命令，[此外在发布时 workspace:\*之类的 会进行自动转换](https://pnpm.io/workspaces#publishing-workspace-packages)
 
+可以进行多次的 pnpm changeset，当觉得可以发版的时候，再进行 pnpm vp，这样这一个版本的内容就会比较“丰富”，release 也比较好看
+
 ### 🚧 TODO
 
 - [x] 要是在 play 包进行测试的话，每次更新任意一个库的代码，都要进行打包（麻烦，但暂时没有找到其他方案，除非不打包，但不打包 npm 就要发布源码，徒增下载体积）
@@ -75,4 +77,4 @@
 
   - `pnpm vp` (详情见手动发布流程)
 
-  - `git push orgin main`：只有 push 到 main 分支才会触发 github action
+  - `git push orgin main`：只有 push 到 main 分支才会触发 github action，上面的两个命令只是为了变更集的收集，当然如果要发布到 npm 上，那么就必须修改版本，也就是 pnpm vp ( changeset version )
