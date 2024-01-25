@@ -1,5 +1,13 @@
 # @linzhe-tools/components
 
+## 0.0.8
+
+### Patch Changes
+
+- chore: update package.json scripts
+- Updated dependencies
+  - @linzhe-tools/shared@0.0.4
+
 ## 0.0.7
 
 ### Patch Changes

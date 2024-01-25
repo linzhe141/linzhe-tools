@@ -1,6 +1,6 @@
 {
   "name": "@linzhe-tools/shared",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "module",
   "description": "linzhe-tools shared utils",
   "publishConfig": {
@@ -19,7 +19,7 @@
     "dist"
   ],
   "scripts": {
-    "build:src": "rm -rf dist && vite build"
+    "build": "rm -rf dist && vite build"
   },
   "repository": {
     "type": "git",

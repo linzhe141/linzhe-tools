@@ -25,9 +25,6 @@ jobs:
           node-version: 20
           cache: pnpm
 
-      - name: Display dir tree
-        run: pnpm run buildBefore
-
       - name: Install Dependencies
         run: pnpm install
 

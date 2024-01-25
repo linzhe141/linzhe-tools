@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "pnpm run -C play dev",
     "docs": "pnpm run -C docs docs:dev",
-    "buildBefore": "pwd && tree",
-    "build": "rm -rf dist && pnpm run -r --filter=./packages/* build:src && pnpm run build:Dist",
+    "build": "rm -rf dist && pnpm run -r --filter=./packages/* build && pnpm run build:Dist",
     "build:Dist": "vue-tsc -p tsconfig.json --declaration --emitDeclarationOnly && npx tsx scripts/buildDist.ts",
     "changeset": "changeset",
     "vp": "changeset version",

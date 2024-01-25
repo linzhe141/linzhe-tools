@@ -1,6 +1,6 @@
 {
   "name": "@linzhe-tools/components",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -22,7 +22,7 @@
     "dist"
   ],
   "scripts": {
-    "build:src": "rm -rf dist && vite build"
+    "build": "rm -rf dist && vite build"
   },
   "repository": {
     "type": "git",

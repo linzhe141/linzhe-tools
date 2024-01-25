@@ -1,5 +1,11 @@
 # @linzhe-tools/shared
 
+## 0.0.4
+
+### Patch Changes
+
+- chore: update package.json scripts
+
 ## 0.0.3
 
 ### Patch Changes
