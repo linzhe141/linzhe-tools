@@ -21,7 +21,9 @@ export default defineConfig({
       // { text: 'Home', link: '/' },
       // { text: '基础组件', link: '/markdown-examples' },
     ],
-
+    search: {
+      provider: 'local',
+    },
     sidebar: [
       {
         text: '快速使用',

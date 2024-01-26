@@ -1,4 +1,5 @@
 import DefaultTheme from 'vitepress/theme'
+import './style.css'
 import DemoClientOnly from '../../components/DemoClientOnly.vue'
 const globalComponents = [{ name: 'DemoClientOnly', component: DemoClientOnly }]
 // @ts-ignore
