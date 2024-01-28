@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/linzhe141/linzhe-tools/33f7e0189ba0deccc04727705fa6ec70ce4ccce9/docs/public/logo.svg" alt="linzhe-tools Logo" >
+<img src="https://raw.githubusercontent.com/linzhe141/linzhe-tools/main/docs/public/logo.svg" alt="linzhe-tools Logo" >
 
 # linzhe-tools
 
