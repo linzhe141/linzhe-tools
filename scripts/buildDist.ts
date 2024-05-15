@@ -9,6 +9,12 @@ const __dirname = dirname(__filename)
 async function main() {
   const spinner = createSpinner(' building dist').start()
   try {
+    await copy(
+      resolve(__dirname, '../packages/components/dist/style'),
+      resolve(__dirname, '../packages/linzhe-tools/dist/style')
+    )
+    spinner.clear()
+    console.log(chalk.green('✨ style.css build successfully completed!'))
     // vue-tsc -p tsconfig.json --declaration --emitDeclarationOnly
     await execa('npx', [
       'vue-tsc',
@@ -17,14 +23,6 @@ async function main() {
       '--declaration',
       '--emitDeclarationOnly',
     ])
-
-    await copy(
-      resolve(__dirname, '../packages/components/dist/style'),
-      resolve(__dirname, '../packages/linzhe-tools/dist/style')
-    )
-    spinner.clear()
-    console.log(chalk.green('✨ style.css build successfully completed!'))
-
     const packagesList = ['linzhe-tools', 'components', 'shared']
     async function copyDts(packageName: string) {
       for (const file of await fs.readdir(
