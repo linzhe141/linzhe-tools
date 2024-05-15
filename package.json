@@ -6,7 +6,7 @@
     "dev": "pnpm run -C play dev",
     "docs": "pnpm run -C docs docs:dev",
     "build": "rm -rf dist && pnpm run -r --filter=./packages/* build && pnpm run build:Dist",
-    "build:Dist": "vue-tsc -p tsconfig.json --declaration --emitDeclarationOnly && npx tsx scripts/buildDist.ts",
+    "build:Dist": "npx tsx scripts/buildDist.ts",
     "changeset": "changeset",
     "vp": "changeset version",
     "release": "changeset publish"
