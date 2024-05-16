@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { ref } from 'vue'
 import { Props } from './type'
 import { useWatermark } from './useWatermark'
 defineOptions({ name: 'Watermark' })
