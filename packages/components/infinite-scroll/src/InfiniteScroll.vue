@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import { onMounted, ref, onUnmounted } from 'vue'
-import { prefixed } from '@linzhe-tools/shared'
+import { normalizeName, prefixed } from '@linzhe-tools/shared'
 
 const name = 'infinite-scroll'
 
+defineOptions({ name: normalizeName(name) })
 const props = defineProps({
   // 当最后一个元素滚动到 <= distance到视窗时，触发新的加载
   // 但因为额外的检测底部96px{假设的distance} >= 新的元素的合计的高度，则这个一直在视窗内，不会触发检测了

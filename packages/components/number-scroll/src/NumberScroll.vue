@@ -1,10 +1,10 @@
 <script lang="ts" setup>
 import { computed } from 'vue'
-import { prefixed } from '@linzhe-tools/shared'
+import { normalizeName, prefixed } from '@linzhe-tools/shared'
 
 const name = 'number-scroll'
 
-defineOptions({ name: 'NumberScroll' })
+defineOptions({ name: normalizeName(name) })
 type Props = {
   numberString: string
 }

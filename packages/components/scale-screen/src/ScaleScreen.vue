@@ -1,11 +1,11 @@
 <script lang="ts" setup>
 import { useScaleScreen } from './useScaleScreen'
 import { Props } from './type'
-import { prefixed } from '@linzhe-tools/shared'
+import { normalizeName, prefixed } from '@linzhe-tools/shared'
 
 const name = 'scale-screen'
 
-defineOptions({ name: 'ScaleScreen' })
+defineOptions({ name: normalizeName(name) })
 const props = withDefaults(defineProps<Partial<Props>>(), {
   height: 1080,
   width: 1920,

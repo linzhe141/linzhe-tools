@@ -1,11 +1,11 @@
 <script lang="ts" setup>
 import { Props } from './type'
 import { useCarousel } from './useCarousel'
-import { prefixed } from '@linzhe-tools/shared'
+import { normalizeName, prefixed } from '@linzhe-tools/shared'
 
 const name = 'carousel'
 
-defineOptions({ name: 'Carousel' })
+defineOptions({ name: normalizeName(name) })
 const props = withDefaults(defineProps<Partial<Props>>(), {
   interval: 5000,
   autoPlay: true,

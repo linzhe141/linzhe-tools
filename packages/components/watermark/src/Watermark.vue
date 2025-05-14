@@ -1,11 +1,11 @@
 <script lang="ts" setup>
 import { Props } from './type'
 import { useWatermark } from './useWatermark'
-import { prefixed } from '@linzhe-tools/shared'
+import { normalizeName, prefixed } from '@linzhe-tools/shared'
 
 const name = 'watermark'
 
-defineOptions({ name: 'Watermark' })
+defineOptions({ name: normalizeName(name) })
 const props = withDefaults(defineProps<Partial<Props>>(), {
   text: '',
   rotate: 30,

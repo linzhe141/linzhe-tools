@@ -1,11 +1,11 @@
 <script lang="ts" setup>
 import { computed } from 'vue'
 import { useCarouselItem } from './useCarouselItem'
-import { prefixed } from '@linzhe-tools/shared'
+import { normalizeName, prefixed } from '@linzhe-tools/shared'
 
 const name = 'carousel-item'
 
-defineOptions({ name: 'CarouselItem' })
+defineOptions({ name: normalizeName(name) })
 const { isAnimation, wrapItemStyle } = useCarouselItem()
 const classList = computed(() => {
   const result = {

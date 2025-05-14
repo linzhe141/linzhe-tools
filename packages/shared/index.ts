@@ -10,3 +10,10 @@ export function debounce(fn: (...args: any[]) => any, delay: number = 100) {
 }
 
 export const prefixed = 'linzhe-tools'
+
+export function normalizeName(input: string) {
+  return input
+    .split('-')
+    .map((i) => i[0].toUpperCase() + i.slice(1))
+    .join('')
+}
