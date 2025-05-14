@@ -1,6 +1,10 @@
 <script lang="ts" setup>
 import { useScaleScreen } from './useScaleScreen'
 import { Props } from './type'
+import { prefixed } from '@linzhe-tools/shared'
+
+const name = 'scale-screen'
+
 defineOptions({ name: 'ScaleScreen' })
 const props = withDefaults(defineProps<Partial<Props>>(), {
   height: 1080,
@@ -19,7 +23,7 @@ const {
 defineExpose({ fullScreen, exitScreen })
 </script>
 <template>
-  <div class="linzhe-tools-scale-screen-wrap" ref="wrapper">
+  <div :class="`${prefixed}-${name}-wrap`" ref="wrapper">
     <div class="container" ref="scaleWrapper" :style="scaleWrapperStyle">
       <slot :slotProps="slotProps"></slot>
     </div>

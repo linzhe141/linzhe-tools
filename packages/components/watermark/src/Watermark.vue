@@ -1,6 +1,10 @@
 <script lang="ts" setup>
 import { Props } from './type'
 import { useWatermark } from './useWatermark'
+import { prefixed } from '@linzhe-tools/shared'
+
+const name = 'watermark'
+
 defineOptions({ name: 'Watermark' })
 const props = withDefaults(defineProps<Partial<Props>>(), {
   text: '',
@@ -11,7 +15,7 @@ const props = withDefaults(defineProps<Partial<Props>>(), {
 const { watermarkWrapper } = useWatermark(props)
 </script>
 <template>
-  <div class="linzhe-tools-watermark-wrap">
+  <div :class="`${prefixed}-${name}-wrap`">
     <div class="container" ref="watermarkWrapper">
       <slot></slot>
     </div>

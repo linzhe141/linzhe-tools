@@ -1,15 +1,22 @@
 <script lang="ts" setup>
+import { computed } from 'vue'
 import { useCarouselItem } from './useCarouselItem'
+import { prefixed } from '@linzhe-tools/shared'
+
+const name = 'carousel-item'
+
 defineOptions({ name: 'CarouselItem' })
 const { isAnimation, wrapItemStyle } = useCarouselItem()
+const classList = computed(() => {
+  const result = {
+    'is-animation': isAnimation.value,
+  }
+  result[`${prefixed}-${name}-wrap`] = true
+  return result
+})
 </script>
 <template>
-  <div
-    ref="itemDomRef"
-    class="linzhe-tools-carousel-item-wrap"
-    :class="{ 'is-animation': isAnimation }"
-    :style="wrapItemStyle"
-  >
+  <div ref="itemDomRef" :class="classList" :style="wrapItemStyle">
     <slot></slot>
   </div>
 </template>

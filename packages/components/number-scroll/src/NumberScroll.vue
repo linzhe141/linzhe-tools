@@ -1,16 +1,20 @@
 <script lang="ts" setup>
 import { computed } from 'vue'
+import { prefixed } from '@linzhe-tools/shared'
+
+const name = 'number-scroll'
+
+defineOptions({ name: 'NumberScroll' })
 type Props = {
   numberString: string
 }
 defineProps<Props>()
-defineOptions({ name: 'NumberScroll' })
 const numReg = /\d/
 const isNumber = computed(() => (data: string) => numReg.test(data))
 const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 </script>
 <template>
-  <div class="linzhe-tools-number-scroll-wrap">
+  <div :class="`${prefixed}-${name}-wrap`">
     <div v-for="(item, i) in numberString" :key="i">
       <div v-if="isNumber(item)" class="item">
         <div

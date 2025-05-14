@@ -1,6 +1,10 @@
 <script lang="ts" setup>
 import { Props } from './type'
 import { useCarousel } from './useCarousel'
+import { prefixed } from '@linzhe-tools/shared'
+
+const name = 'carousel'
+
 defineOptions({ name: 'Carousel' })
 const props = withDefaults(defineProps<Partial<Props>>(), {
   interval: 5000,
@@ -16,11 +20,11 @@ const {
 </script>
 <template>
   <div
-    class="linzhe-tools-carousel-wrap"
+    :class="`${prefixed}-${name}-wrap`"
     @mouseleave="mouseleaveHandle"
     @mouseenter="mouseenterHandle"
   >
-    <Transition name="linzhe-tools-carousel-arrow-left">
+    <Transition :name="`${prefixed}-${name}-arrow-left`">
       <div v-show="showArrow" class="btn prev-btn" @click="prevHandle">
         <svg width="36" height="36">
           <polygon
@@ -33,7 +37,7 @@ const {
         </svg>
       </div>
     </Transition>
-    <Transition name="linzhe-tools-carousel-arrow-right">
+    <Transition :name="`${prefixed}-${name}-arrow-right`">
       <div v-show="showArrow" class="btn next-btn" @click="nextHandle">
         <svg width="36" height="36">
           <polygon

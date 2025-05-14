@@ -8,3 +8,5 @@ export function debounce(fn: (...args: any[]) => any, delay: number = 100) {
     }, delay)
   }
 }
+
+export const prefixed = 'linzhe-tools'
